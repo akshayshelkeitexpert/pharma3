@@ -82,6 +82,10 @@ const routes: Routes = [
         path: 'quotehistory',
         loadChildren: () => import('../quote-history/quote-history.module').then(m => m.QuoteHistoryPageModule)
       },
+      {
+        path: 'quoterequest',
+        loadChildren: () => import('../quote-request/quote-request.module').then(m => m.QuoteRequestPageModule)
+      },
 
     ]
   }

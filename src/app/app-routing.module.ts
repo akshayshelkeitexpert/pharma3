@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'quote-history',
     loadChildren: () => import('./authenticate/pages/quote-history/quote-history.module').then( m => m.QuoteHistoryPageModule)
+  },
+  {
+    path: 'quote-request',
+    loadChildren: () => import('./authenticate/pages/quote-request/quote-request.module').then( m => m.QuoteRequestPageModule)
   }
 
 ];
