@@ -3,25 +3,35 @@
     <ion-buttons slot="start">
       <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
     </ion-buttons>
-    <ion-title>Quote Notification</ion-title>
+    <ion-title>Quote Request 1</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-row class="main-heading ion-margin">
-    <ion-col size="12" class="ion-padding-start ">
+<ion-content class="ion-padding-start ion-padding-end">
+  <ion-row class="main-heading">
+    <ion-col size="12">
       <p class="quote-label ion-no-margin">Quote Request {{i}}</p>
       <p class="quote-date  ion-no-margin">10th Feb’22 l 10:20 AM </p>
     </ion-col>
-    <ion-col>
-      <p class="ion-no-margin ion-padding-start paracetamol">Paracetamol 650</p>
+    <ion-col size="12">
+      <p class="ion-no-margin med-name">Paracetamol 650</p>
     </ion-col>
 
   </ion-row>
-  <ng-container *ngFor="let i of [1,2,3,4,5,6,7,8]">
-    <ion-row class="ion-margin main-row ion-padding" routerLink="/admin/quotedetails">
-      <ion-col size="12" class="ion-no-padding ion-padding-start">
-        <p class="paracetamol">Paracetamol 650</p>
+  <ng-container *ngFor="let item of [1,2,3,4,5,6,7,8];let i = index">
+    <ion-row class="quot-options">
+      <ion-col size="12" class="ion-no-padding">
+        <div class="quote-number"> <span>Quote {{i+1}}</span> </div>
+        <div class="quote-ico-opt">
+          <ion-icon [src]="'assets/icon/call-icon.svg'"></ion-icon>
+          <ion-icon [src]="'assets/icon/contact-icon.svg'"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="main-row ion-padding" routerLink="/admin/quotedetails">
+
+      <ion-col size="12" class="ion-no-padding">
+        <p class="med-name">Paracetamol 650</p>
         <p><span>Manufacturer Name:</span>&nbsp; <span>Lorem Ipsum name</span></p>
         <p><span>Expiry Date:</span>&nbsp; <span>03 april 23</span></p>
         <p><span>Quantity:</span>&nbsp; <span>5 Carton</span></p>
