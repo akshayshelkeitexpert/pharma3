@@ -20,7 +20,8 @@ export class AppComponent {
     { title: 'documentview', url: '/admin/documentview', icon: 'warning' },
     { title: 'quotenotification', url: '/admin/quotenotification', icon: 'warning' },
     { title: 'quotedetails', url: '/admin/quotedetails', icon: 'warning' },
-    { title: 'replyquotation', url: '/admin/replyquotation', icon: 'warning' }
+    { title: 'replyquotation', url: '/admin/replyquotation', icon: 'warning' },
+    { title: 'quotes', url: '/admin/quotes', icon: 'warning' }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() { }
