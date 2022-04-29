@@ -1,0 +1,55 @@
+::ng-deep {
+  app-state {
+    .top-logo {
+      position: relative;
+
+      // top: 56px;
+      img {
+        width: 11pc;
+      }
+    }
+
+    ion-row {
+      &.next-btn {
+        position: relative;
+        top: 11rem;
+      }
+    }
+
+
+    .password {
+      text-decoration: none;
+    }
+
+    .custom-textbox {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 126.39%;
+      border-radius: 50px 60px 60px 0px;
+    }
+
+    .forgot-link {
+      a {
+        color: var(--ion-color-primary);
+        text-decoration: none;
+      }
+    }
+
+    .recover {
+      // bottom: 12px;
+      // position: relative;
+
+      .tag {
+        font-weight: 400;
+        font-size: 28px;
+      }
+
+      .tag2 {
+        font-size: 15px;
+      }
+    }
+
+    ion-row {}
+
+  }
+}

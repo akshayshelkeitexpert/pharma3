@@ -1,0 +1,51 @@
+::ng-deep {
+  app-authorized-vendor {
+    ion-content {
+      ion-list {
+        ion-item.main-card {
+          margin-bottom: -20px;
+          --background: #F6F8FA;
+          --border-radius: 31px 60px 60px 0px;
+
+          //   height: 75px;
+          .details-ele {
+            position: relative;
+            left: 1pc;
+
+            ion-label:nth-child(1) {
+              margin-bottom: 4px;
+            }
+          }
+        }
+
+        ion-label {
+          .label-desc {
+            font-size: 17px;
+            color: #31333D;
+            font-weight: 500;
+          }
+
+          .label-name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: #31333D;
+          }
+        }
+
+        .forward-arrow {
+          position: relative;
+          right: -12px;
+          width: 18px;
+          color: black;
+        }
+      }
+
+      .next-btn {
+        position: relative;
+        top: 25rem;
+      }
+    }
+  }
+}

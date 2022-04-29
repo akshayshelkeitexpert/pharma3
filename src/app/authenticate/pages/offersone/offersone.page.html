@@ -1,0 +1,73 @@
+<ion-header class="ion-padding-start ion-padding-top ion-padding-end">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
+    </ion-buttons>
+    <ion-title>Broadcast Sale Offer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-row class="">
+    <ion-col size="12">
+      <ion-label class="offer-page">Enter product name you want to offer on it</ion-label>
+      <br><br>
+      <ion-input type="text" expand="block" class="form-control custom-textbox">
+      </ion-input>
+    </ion-col>
+    <ion-col size="12">
+      <br>
+      <ion-label class="offer-page">Select date range</ion-label>
+      <br><br>
+      <ion-input type="text" expand="block" class="form-control custom-textbox" placeholder="--select--">
+        <ion-icon class="right-icon" [src]="'assets/icon/date-range-ico.svg'"></ion-icon>
+      </ion-input>
+    </ion-col>
+    <ion-col size="12">
+      <br>
+      <ion-label class="offer-page">Type here text which will go on your offer banner</ion-label>
+      <br>
+      <ion-textarea placeholder="Enter more information here..." class="form-control custom-textarea"></ion-textarea>
+    </ion-col>
+  </ion-row>
+  <ion-list lines="none">
+    <ion-radio-group allow-empty-selection="true" name="radio-group" #radioGroup>
+      <ion-list-header>
+        <ion-label>Offers send to</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Only Assosiates</ion-label>
+        <ion-radio slot="start" class="radio-btn" name="offerto"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Only Assosiates</ion-label>
+        <ion-radio slot="start" class="radio-btn" name="offerto"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Only Assosiates</ion-label>
+        <ion-radio slot="start" class="radio-btn" name="offerto"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Only Assosiates</ion-label>
+        <ion-radio slot="start" class="radio-btn" name="offerto"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Only Assosiates</ion-label>
+        <ion-radio slot="start" class="radio-btn" name="offerto"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Only Assosiates</ion-label>
+        <ion-radio slot="start" class="radio-btn" name="offerto"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+
+  <ion-row class="next-btn ion-padding-top ion-margin ">
+    <ion-col size="12">
+      <ion-button expand="block" type="submit" routerLink="/auth/selection" class="custom-btn">POST
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

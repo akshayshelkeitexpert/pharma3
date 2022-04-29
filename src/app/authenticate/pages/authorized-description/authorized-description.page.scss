@@ -1,0 +1,34 @@
+::ng-deep {
+  app-authorized-description {
+    ion-content {
+      .custom-textarea {
+        opacity: 0.5;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 12px;
+        height: 131px;
+      }
+
+      .attachment-icon {
+        width: 22px;
+        height: 24px;
+        margin-right: 9px;
+        position: relative;
+        top: 4px;
+      }
+
+      .page-heading {
+        font-size: 28px;
+        color: #31333D;
+      }
+
+      .custom-textbox {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 126.39%;
+        border-radius: 50px 60px 60px 0px;
+      }
+    }
+
+  }
+}

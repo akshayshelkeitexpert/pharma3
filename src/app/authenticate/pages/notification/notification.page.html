@@ -1,0 +1,21 @@
+<ion-header class="ion-padding-start ion-padding-top ion-padding-end">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
+    </ion-buttons>
+    <ion-title>Notification</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-padding-start ion-padding-end">
+    <ion-col size="12" class="col" *ngFor="let item of notifications">
+      <div class="main-card" [ngClass]="item.isGreen ? 'green-shade' : 'white-shade'">
+        <p class="card-heading"><strong>{{item.title}}</strong></p>
+        <p class="card-description">{{item.description}}</p>
+        <p class="card-date">{{item.date}}</p>
+      </div>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

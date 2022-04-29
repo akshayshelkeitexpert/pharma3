@@ -1,0 +1,97 @@
+::ng-deep {
+  app-associates-details {
+    ion-row {
+      &.list {
+        background: #F6F8FA;
+        border-radius: 31px 31px 31px 0px;
+        // position: relative;
+        // top: 43px;
+
+        p.line {
+          border: 1px solid black;
+          width: 100%;
+          margin: 38px 17px -9px 17px;
+          opacity: 0.3;
+        }
+      }
+
+      .profile-details {
+        position: relative;
+        top: 43px;
+
+      }
+
+    }
+
+    .tag1 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 16px;
+      /* identical to box height, or 89% */
+
+
+      color: #31333D;
+    }
+
+    .tag2 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      color: #31333D;
+    }
+
+    .tag3 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      /* identical to box height, or 100% */
+
+
+      color: #31333D;
+    }
+
+    .list-heading {
+      margin-top: -38px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: -1px;
+      margin-bottom: 10px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .profile {
+      max-width: 100%;
+      border: 0;
+      height: 109px;
+      position: relative;
+      top: 81px;
+    }
+
+    ion-row {
+      &.next-btn {
+        position: relative;
+        top: 13rem;
+      }
+    }
+
+    .custom-text {
+      --background: #FF4E4E;
+      --border-radius: 83px 60px 60px 0px !important;
+      height: 54px;
+      --box-shadow: none;
+    }
+  }
+}

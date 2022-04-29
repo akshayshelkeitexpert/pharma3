@@ -1,0 +1,89 @@
+::ng-deep {
+  app-otp {
+    .header {
+      top: 38px;
+      position: relative;
+      left: 12px;
+    }
+
+    .logo {
+      // width: 205px;
+    }
+
+    .recover {
+      // bottom: -31px;
+      // position: relative;
+
+      .tag {
+        font-weight: 400;
+        font-size: 26px;
+      }
+
+      .tag2 {
+        font-size: 15px;
+      }
+    }
+
+
+
+    // .input {
+    //   position: relative;
+    //   bottom: 15px;
+    // }
+
+
+    ion-row {
+      .custom-textbox {
+        opacity: 0.5;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 60px;
+        color: #93949A;
+        padding: 7px 9px !important;
+        // margin-left: 12px !important;
+        color: black;
+      }
+
+      &.next-btn {
+        // position: absolute;
+        bottom: 11px;
+        width: 92%;
+      }
+
+      &.forgot-btn {
+        position: relative;
+        top: 5rem;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      .userInput {
+        input {
+          background: #F6F8FA;
+          border: none;
+          border-radius: 5px;
+          width: 40px;
+          height: 40px;
+          margin-right: 15px;
+          padding: 0px;
+          text-align: center;
+          font-size: 14px;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+
+    .menul-textbox {}
+
+    .left-icon {
+      margin-left: 10px;
+      padding: 6px;
+    }
+
+  }
+
+  // ion-footer {
+  //   position: fixed;
+  //   bottom: 0px;
+  // }
+}

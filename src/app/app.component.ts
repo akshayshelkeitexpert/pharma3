@@ -6,13 +6,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox', url: '/folder/Inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
+    { title: 'replyquotation', url: '/admin/replyquotation', icon: 'mail' },
+    { title: 'accountsetting', url: '/admin/accountsetting', icon: 'paper-plane' },
+    { title: 'search', url: '/admin/search', icon: 'heart' },
+    { title: 'authorizedvendor', url: '/admin/authorizedvendor', icon: 'archive' },
+    { title: 'offers', url: '/admin/offers', icon: 'trash' },
+    { title: 'associateslist', url: '/admin/associateslist', icon: 'warning' },
+    { title: 'associatesDetails', url: '/admin/associatesDetails', icon: 'warning' },
+    { title: 'associates', url: '/admin/associates', icon: 'warning' },
+    { title: 'comments', url: '/admin/comments', icon: 'warning' },
+    { title: 'offersone', url: '/admin/offersone', icon: 'warning' },
+    { title: 'authdescription', url: '/admin/authdescription', icon: 'warning' },
+    { title: 'documentview', url: '/admin/documentview', icon: 'warning' },
+    { title: 'quotenotification', url: '/admin/quotenotification', icon: 'warning' },
+    { title: 'quotedetails', url: '/admin/quotedetails', icon: 'warning' },
+    { title: 'replyquotation', url: '/admin/replyquotation', icon: 'warning' }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  constructor() {}
+  constructor() { }
 }

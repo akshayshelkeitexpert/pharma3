@@ -1,0 +1,48 @@
+::ng-deep {
+  app-account-updating-model {
+    ion-content {
+      ion-row {
+        &.model {
+          position: relative;
+          top: 49px;
+        }
+
+        &.model-password {
+          position: relative;
+          top: 23px;
+
+        }
+
+        &.next-btn {
+          position: relative;
+          top: 22px;
+          box-sizing: border-box;
+          border-radius: 60px;
+        }
+
+      }
+
+      .model-newpassword {
+        top: 29px
+      }
+
+      .custom-textbox {
+        box-sizing: border-box;
+        border-radius: 60px;
+      }
+
+      .username {
+        position: relative;
+        /* top: -1rem; */
+        bottom: 10px;
+        font-family: 'Roboto';
+        /* font-style: normal; */
+        /* font-weight: 400; */
+        font-size: 14px;
+        line-height: 16px;
+        color: #31333D;
+
+      }
+    }
+  }
+}

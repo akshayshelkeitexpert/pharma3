@@ -1,0 +1,57 @@
+::ng-deep {
+  app-offersone {
+    ion-content {
+      ion-row {
+        .offer-page {
+          font-size: 14px;
+          color: #999;
+          padding-bottom: 5px;
+        }
+
+        .custom-textbox {
+          border-radius: 60px;
+        }
+
+        .custom-textarea {
+          opacity: 0.5;
+          border: 1px solid #000000;
+          box-sizing: border-box;
+          border-radius: 12px;
+          --Width: 333px;
+          height: 131px;
+        }
+
+        .forward-arrow {
+          position: relative;
+          right: -12px;
+          width: 18px;
+          color: black;
+        }
+
+        // .right-icon {
+        //   margin-left: 11px;
+        //   position: absolute;
+        //   right: 20px;
+        //   top: 63px;
+        // }
+      }
+
+      ion-radio-group {
+        .radio-btn {
+          margin-right: 12px !important;
+        }
+
+        ion-list-header {
+          ion-label {
+            font-size: 18px;
+          }
+        }
+
+        ion-item {
+          font-size: 14px !important;
+          color: #C4C4C4;
+        }
+      }
+    }
+  }
+}

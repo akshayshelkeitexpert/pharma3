@@ -1,0 +1,57 @@
+::ng-deep {
+  app-comments {
+    ion-content {
+      ion-row {
+        &.text-list {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 154.5%;
+          color: #000000;
+          opacity: 0.5;
+        }
+
+        &.prof-details {
+          display: inline-flex;
+          align-items: center;
+          margin: 20px 0px 0px 0px;
+
+          .date {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 154.5%;
+            color: #000000;
+            position: relative;
+            top: 3px;
+          }
+
+          .heading {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 154.5%;
+            color: #000000;
+            margin: 0px 10px;
+          }
+
+          .customlist {
+            background: #10A8A0;
+            opacity: 0.5;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 23px;
+            width: 42px;
+            height: 42px;
+          }
+        }
+
+      }
+    }
+  }
+}

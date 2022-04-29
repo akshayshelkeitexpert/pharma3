@@ -24,3 +24,58 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+* {
+  font-family: 'Roboto';
+  font-style: normal;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+.custom-btn {
+  --background: linear-gradient(265.89deg, #10A8A0 11.68%, #83C24C 89.65%) !important;
+  --border-radius: 83px 60px 60px 0px !important;
+  height: 54px;
+  --box-shadow: none;
+}
+
+.header {
+  top: 38px;
+  position: relative;
+  left: 12px;
+}
+
+ion-header {
+  &.header-md::after {
+    background-image: none !important;
+  }
+}
+
+.custom-textbox {
+  opacity: 0.5;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  color: #141414;
+  height: 54px;
+  padding: 7px 9px !important;
+
+  ion-icon {
+    &.left-icon {
+      margin-right: 11px;
+      margin-left: 12px;
+    }
+
+    &.right-icon {
+      margin-left: 11px;
+      position: absolute;
+      right: 20px;
+    }
+  }
+
+  &.right-icon-available {
+    padding-right: 40px !important;
+  }
+}

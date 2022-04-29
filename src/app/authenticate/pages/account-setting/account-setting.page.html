@@ -1,0 +1,69 @@
+<ion-header class="ion-padding-start ion-padding-top ion-padding-end">
+  <ion-toolbar>
+    <!-- <ion-buttons slot="start">
+      <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
+    </ion-buttons> -->
+    <ion-title>Account Seetings</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list lines="none">
+    <ion-item class="main-card ion-padding">
+      <div class="details-ele">
+        <ion-label><span class="label-name"> User name</span></ion-label>
+        <ion-label><span class="label-desc">Akshay</span></ion-label>
+      </div>
+      <ion-icon slot="end" class="forward-arrow" name="chevron-forward" (click)="plusbuttonmodel('name','name-modal')">
+      </ion-icon>
+    </ion-item>
+
+    <ion-item class="main-card ion-padding">
+      <div class="details-ele">
+        <ion-label><span class="label-name"> Phone Number</span></ion-label>
+        <ion-label><span class="label-desc">+91 9012 345678</span></ion-label>
+      </div>
+      <ion-icon slot="end" class="forward-arrow" name="chevron-forward"
+        (click)="plusbuttonmodel('phone','phone-modal')"></ion-icon>
+    </ion-item>
+
+    <ion-item class="main-card ion-padding">
+      <div class="details-ele">
+        <ion-label><span class="label-name">Location</span></ion-label>
+        <ion-label><span class="label-desc">235/a Lorem ipsum dummy addresss</span></ion-label>
+      </div>
+      <!-- <ion-icon slot="end" class="forward-arrow" name="chevron-forward"></ion-icon> -->
+    </ion-item>
+
+    <ion-item class="main-card ion-padding">
+      <div class="details-ele">
+        <ion-label><span class="label-name">State</span></ion-label>
+        <ion-label><span class="label-desc">West Bengal</span></ion-label>
+      </div>
+      <!-- <ion-icon slot="end" class="forward-arrow" name="chevron-forward"></ion-icon> -->
+    </ion-item>
+    <ion-item class="main-card ion-padding">
+      <div class="details-ele">
+        <ion-label><span class="label-name">Station</span></ion-label>
+        <ion-label><span class="label-desc">Howrah</span></ion-label>
+      </div>
+      <ion-icon slot="end" class="forward-arrow" name="chevron-forward"></ion-icon>
+    </ion-item>
+    <ion-item class="main-card ion-padding">
+      <div class="details-ele">
+        <!-- <ion-label><span class="label-name">Change Password </span></ion-label> -->
+        <ion-label><span class="label-desc">Change Password</span></ion-label>
+      </div>
+      <ion-icon slot="end" class="forward-arrow" (click)="plusbuttonmodel('password','password-modal')"
+        name="chevron-forward">
+      </ion-icon>
+    </ion-item>
+    <ion-item class="main-card ion-padding">
+      <div class="details-ele">
+        <!-- <ion-label><span class="label-name"> Comments</span></ion-label> -->
+        <ion-label><span class="label-desc">Comments</span></ion-label>
+      </div>
+      <ion-icon slot="end" class="forward-arrow" name="chevron-forward"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

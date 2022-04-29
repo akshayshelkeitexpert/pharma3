@@ -1,0 +1,57 @@
+::ng-deep {
+  app-selction {
+
+    .selction-btn {
+      --background: #83C24C !important;
+      ;
+
+      --border-radius: 83px 60px 60px 0px !important;
+      height: 54px;
+      --box-shadow: none;
+    }
+
+    .selction-btn1 {
+      --background: #10A8A0;
+      --border-radius: 83px 60px 60px 0px !important;
+      height: 54px;
+      --box-shadow: none;
+    }
+
+    .top-logo {
+      position: relative;
+
+      // top: 56px;
+      img {
+        width: 11pc;
+      }
+    }
+
+    ion-row {
+      &.next-btn {
+        position: relative;
+        top: 10rem;
+
+      }
+    }
+
+
+    .password {
+      text-decoration: none;
+    }
+
+    .custom-textbox {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 126.39%;
+      border-radius: 50px 60px 60px 0px;
+    }
+
+    .forgot-link {
+      a {
+        color: var(--ion-color-primary);
+        text-decoration: none;
+      }
+    }
+
+  }
+}

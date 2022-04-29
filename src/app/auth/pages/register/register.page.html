@@ -1,0 +1,149 @@
+<ion-content>
+  <form>
+    <div class="login-screen">
+      <div class="text-center top-logo ion-padding ion-margin">
+        <img src="assets/icon/Pharma.png">
+        <ion-text>
+          <p class="tag">Login for a seamless experience</p>
+        </ion-text>
+      </div>
+      <ion-row lines="none" class="ion-margin ion-padding-top">
+        <ion-col size="12">
+          <ion-input autocomplete="off" type="text" expand="block" class="form-control custom-textbox"
+            placeholder="Company Name">
+            <ion-icon [src]="'assets/icon/email-ico.svg'" class="left-icon" item-left></ion-icon>
+          </ion-input>
+        </ion-col>
+        <ion-col size="12">
+          <ion-input autocomplete="off" type="text" expand="block" class="form-control custom-textbox"
+            placeholder="Email Address">
+            <ion-icon [src]="'assets/icon/email-ico.svg'" class="left-icon" item-left></ion-icon>
+          </ion-input>
+        </ion-col>
+        <ion-col size="12">
+          <ion-input autocomplete="off" type="text" expand="block" class="form-control custom-textbox"
+            placeholder="Mobile Number">
+            <ion-icon [src]="'assets/icon/email-ico.svg'" class="left-icon" item-left></ion-icon>
+          </ion-input>
+        </ion-col>
+
+
+        <ion-col size="12">
+          <ion-input autocomplete="off" [type]="showPsw ? 'text' : 'password'" expand="block"
+            class="form-control custom-textbox right-icon-available" placeholder="Password">
+            <ion-icon [src]="'assets/icon/lock-ico.svg'" class="left-icon" item-left></ion-icon>
+
+            <ion-icon *ngIf="showPsw==true" (click)="changePassword()" class="right-icon"
+              [src]="'assets/icon/pass-eye-close-ico.svg'" color="warning"></ion-icon>
+            <ion-icon [src]="'assets/icon/pass-eye-close-ico.svg'" (click)="changePassword()" class="right-icon"
+              *ngIf="showPsw==false" color="warning">
+            </ion-icon>
+          </ion-input>
+        </ion-col>
+        <ion-col size="12">
+          <ion-input autocomplete="off" [type]="showPsw ? 'text' : 'password'" expand="block"
+            class="form-control custom-textbox right-icon-available" placeholder="Password">
+            <ion-icon [src]="'assets/icon/lock-ico.svg'" class="left-icon" item-left></ion-icon>
+
+            <ion-icon *ngIf="showPsw==true" (click)="changePassword()" class="right-icon"
+              [src]="'assets/icon/pass-eye-close-ico.svg'" color="warning"></ion-icon>
+            <ion-icon [src]="'assets/icon/pass-eye-close-ico.svg'" (click)="changePassword()" class="right-icon"
+              *ngIf="showPsw==false" color="warning">
+            </ion-icon>
+          </ion-input>
+        </ion-col>
+        <ion-col size="12">
+          <ion-input autocomplete="off" [type]="showPsw ? 'text' : 'password'" expand="block"
+            class="form-control custom-textbox right-icon-available" placeholder="Password">
+            <ion-icon [src]="'assets/icon/lock-ico.svg'" class="left-icon" item-left></ion-icon>
+
+            <ion-icon *ngIf="showPsw==true" (click)="changePassword()" class="right-icon"
+              [src]="'assets/icon/pass-eye-close-ico.svg'" color="warning"></ion-icon>
+            <ion-icon [src]="'assets/icon/pass-eye-close-ico.svg'" (click)="changePassword()" class="right-icon"
+              *ngIf="showPsw==false" color="warning">
+            </ion-icon>
+          </ion-input>
+        </ion-col>
+
+      </ion-row>
+      <ion-row class="ion-margin">
+        <ion-col size="12" class=" forgot-link">
+          <p>Licenses and Documents </p>
+        </ion-col>
+        <ion-col size="7">
+          <p>Drug License</p>
+        </ion-col>
+        <ion-col size="5">
+          <ion-button expand="block" type="submit" class="custom">
+            <ion-icon [src]="'assets/icon/lock-ico.svg'"></ion-icon>Upload
+          </ion-button>
+        </ion-col>
+        <ion-col size="7">
+          <p>GST Certificate</p>
+        </ion-col>
+        <ion-col size="5">
+          <ion-button expand="block" type="submit" class="custom">
+            <ion-icon [src]="'assets/icon/lock-ico.svg'"></ion-icon>Upload
+
+          </ion-button>
+        </ion-col>
+        <ion-col size="7">
+          <p>FSSAI License</p>
+        </ion-col>
+        <ion-col size="5">
+          <ion-button expand="block" type="submit" class="custom">
+            <ion-icon [src]="'assets/icon/lock-ico.svg'"></ion-icon>Upload
+
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="7">
+          <p>PAN Number</p>
+        </ion-col>
+        <ion-col size="5">
+          <ion-button expand="block" type="submit" class="custom">
+            <ion-icon [src]="'assets/icon/lock-ico.svg'"></ion-icon>Upload
+
+          </ion-button>
+        </ion-col>
+
+
+        <ion-col size="7">
+          <p>Bank Account Details</p>
+        </ion-col>
+        <ion-col size="5">
+          <ion-button expand="block" type="submit" class="custom">
+            <ion-icon [src]="'assets/icon/lock-ico.svg'"></ion-icon>Upload
+
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="next-btn ion-padding-top ion-margin ">
+        <ion-col size="12">
+          <ion-button expand="block" type="submit" routerLink="/auth/otp" class="custom-btn">Next
+          </ion-button>
+        </ion-col>
+        <ion-col size="12" class="text-center forgot-link">
+          <p class="footer-text">
+            Already have an account?
+            <a> LOGIN</a>
+          </p>
+        </ion-col>
+        <ion-col size="12">
+          <ion-text color="medium" class="text-center ">
+            <p class="footer">
+              By Signing in you agree to our
+              <a class="password" href="javascript:void(0);">Terms & conditions</a>
+              and
+              <a class="password" href="javascript:void(0);">Privacy policy</a>
+            </p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+
+    </div>
+
+  </form>
+
+
+</ion-content>

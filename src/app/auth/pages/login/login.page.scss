@@ -1,0 +1,47 @@
+::ng-deep {
+  app-login {
+    .top-logo {
+      position: relative;
+      margin-top: 2pc;
+
+      // top: 56px;
+      img {
+        width: 11pc;
+      }
+    }
+
+    .footer-text {
+      font-size: 14px;
+      color: #BEBEC1;
+      font-weight: normal;
+    }
+
+    ion-row {
+      &.next-btn {
+        position: relative;
+        top: 7pc;
+      }
+    }
+
+
+    .password {
+      text-decoration: none;
+    }
+
+    .custom-textbox {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 126.39%;
+      border-radius: 50px 60px 60px 0px;
+    }
+
+    .forgot-link {
+      a {
+        color: var(--ion-color-primary);
+        text-decoration: none;
+        font-size: 14px;
+      }
+    }
+
+  }
+}

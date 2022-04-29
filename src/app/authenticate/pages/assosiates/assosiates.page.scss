@@ -1,0 +1,83 @@
+::ng-deep {
+  app-assosiates {
+    .header {
+      top: 38px;
+      position: relative;
+      left: 12px;
+    }
+
+    .logo {
+      width: 205px;
+    }
+
+    .recover {
+      bottom: -14px;
+      position: relative;
+
+      .tag {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 126.39%;
+        /* or 35px */
+
+
+        color: #31333D;
+      }
+
+      .tag2 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 126.39%;
+        /* or 20px */
+
+        text-align: center;
+
+        color: #31333D;
+
+      }
+    }
+
+
+
+    // .input {
+    //   position: relative;
+    //   bottom: 15px;
+    // }
+
+
+    ion-row {
+      .custom-textbox {
+        opacity: 0.5;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 60px 56px 44px 0px;
+
+      }
+
+      &.next-btn {
+        position: relative;
+        top: 24rem;
+      }
+
+      &.forgot-btn {
+        position: relative;
+        top: 5rem;
+        text-decoration: none;
+        font-size: 20px;
+      }
+    }
+
+    .menul-textbox {}
+
+    .left-icon {
+      margin-left: 10px;
+      padding: 6px;
+    }
+
+  }
+
+}

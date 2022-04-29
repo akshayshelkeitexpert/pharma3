@@ -1,0 +1,85 @@
+::ng-deep {
+  app-associateslist {
+    ion-list {
+      hr {
+        background: #CACFE3;
+        margin: 0px 20px;
+        height: 0.4px;
+      }
+
+      .profileName {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 126.39%;
+        color: #31333D;
+        margin-left: 12px;
+
+      }
+
+      ion-list-header {
+
+        h3 {
+          color: #6B6B6B;
+          font-weight: bold;
+        }
+      }
+
+      ion-item {
+        --border-color: #fff;
+
+        ion-avatar {
+          margin-right: 10px;
+        }
+
+        ion-label {
+          h4 {
+            font-weight: bold;
+            color: #6B6B6B;
+          }
+
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .member-list {
+      ion-avatar {
+        background: #838BB2;
+        text-align: center;
+        font-weight: bold;
+
+        p {
+          margin: 0;
+          margin-top: 4px;
+          color: #fff;
+        }
+      }
+
+      .customlist {
+        background: #CACFE3;
+        height: 54px;
+        width: 54px;
+      }
+    }
+
+    span {
+      background: #EFF1F7;
+      margin-left: 50px;
+      border-radius: 12px;
+      font-size: 16px;
+      padding: 5px;
+      position: relative;
+    }
+
+    ion-row {
+      &.next-btn {
+        position: relative;
+        top: 30rem;
+      }
+    }
+  }
+}

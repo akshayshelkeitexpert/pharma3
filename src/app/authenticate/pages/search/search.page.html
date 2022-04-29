@@ -1,0 +1,63 @@
+<ion-content>
+  <form>
+    <div class="login-screen">
+      <div class="header">
+        <ng-container>
+          <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
+        </ng-container>
+      </div>
+      <ion-row class="ion-margin ion-padding logo">
+        <ion-col size="12" class="text-center">
+          <ion-text class="recover">
+            <h1 class="tag">What are you searching for?</h1>
+            <h6 class="tag2">for a personalized user experience</h6>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-margin ion-padding-top ">
+        <ion-col size="12">
+          <ion-input autocomplete="off" type="text" expand="block" class="form-control custom-textbox"
+            placeholder="Enter product name you want to buy">
+            <ion-icon [src]="'assets/icon/location-ico.svg'" class="left-icon" item-left></ion-icon>
+          </ion-input>
+        </ion-col>
+
+        <ion-col size="12">
+          <ion-input autocomplete="off" type="text" expand="block" class="form-control custom-textbox"
+            placeholder="Manufacturer Name">
+            <ion-icon [src]="'assets/icon/location-ico.svg'" class="left-icon" item-left></ion-icon>
+          </ion-input>
+        </ion-col>
+        <ion-col size="12">
+          <ion-input autocomplete="off" type="text" expand="block" class="form-control custom-textbox"
+            placeholder="Avg. Order Value ">
+            <ion-icon [src]="'assets/icon/location-ico.svg'" class="left-icon" item-left></ion-icon>
+          </ion-input>
+        </ion-col>
+        <ion-col size="12">
+          <ion-input autocomplete="off" type="text" expand="block" class="form-control custom-textbox"
+            placeholder="Unit">
+            <ion-icon [src]="'assets/icon/location-ico.svg'" class="left-icon" item-left></ion-icon>
+          </ion-input>
+        </ion-col>
+        <ion-col size="12">
+          <ion-input autocomplete="off" type="text" expand="block" class="form-control custom-textbox"
+            placeholder="Quantity">
+            <ion-icon [src]="'assets/icon/location-ico.svg'" class="left-icon" item-left></ion-icon>
+          </ion-input>
+        </ion-col>
+      </ion-row>
+
+
+      <br>
+      <ion-row class="next-btn ion-padding-top ion-margin ">
+        <ion-col size="12">
+          <ion-button expand="block" type="submit" routerLink="/auth/assosiates" class="custom-btn">Next
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <br>
+    </div>
+  </form>
+</ion-content>

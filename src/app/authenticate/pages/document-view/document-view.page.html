@@ -1,0 +1,34 @@
+<ion-header class="ion-padding-start ion-padding-top ion-padding-end">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
+    </ion-buttons>
+    <ion-title>Authorized Vendor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ng-container *ngFor="let i of [1,2,3,4]">
+    <ion-row class="ion-margin custome-text ion-padding">
+      <ion-col size="8">
+        <img [src]="'assets/icon/document-view-ico.svg'" class="logo">
+        <p class="title1 ion-no-margin">Company Name:</p>
+        <p class="title2 ion-no-margin">ABCD Company Private Limited</p>
+      </ion-col>
+      <ion-col size="4" class="approval">
+        <p class="ion-no-margin">Status: </p> <br> <br>
+        <p class="ion-no-margin tag">Approved</p> <br> <br>
+        <p class="ion-no-margin img-delete"><img [src]="'assets/icon/delete-ico.svg'" class="logo text-center"></p>
+      </ion-col>
+      <ion-col size="12" class="ion-margin-top">
+        <p class="tag2 ion-no-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper gravida et
+          sit
+          est,
+          pellentesque interdum
+          nisi, luctus feugiat. Sit luctus elementum magna arcu elementum at at. Integer odio turpis mi in dictum.
+          Pellentesque ut aenean lobortis magna lobortis lorem nec nunc. </p>
+      </ion-col>
+    </ion-row>
+  </ng-container>
+
+</ion-content>

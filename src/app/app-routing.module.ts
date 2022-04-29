@@ -2,14 +2,19 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'auth',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'auth',
+    loadChildren: () => import('./auth/pages/main/main.module').then(m => m.MainPageModule)
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('./authenticate/pages/main/main.module').then(m => m.MainPageModule)
   }
 ];
 
@@ -19,4 +24,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

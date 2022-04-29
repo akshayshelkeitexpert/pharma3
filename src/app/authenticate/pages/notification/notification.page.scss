@@ -1,0 +1,65 @@
+::ng-deep {
+  app-notification {
+    ion-content {
+      ion-row {
+        .col {
+          //   margin-top: 20px;
+
+          .main-card {
+
+            &.white-shade {
+              background: #F6F8FA !important;
+
+              .card-heading {
+                color: #10A8A0;
+              }
+
+              .card-description {
+                color: #93949A;
+              }
+
+              .card-date {
+                color: #9A9BA1;
+              }
+            }
+
+            &.green-shade {
+              background: #CAEBE9 !important;
+
+              .card-heading {
+                color: #3E3D3D;
+              }
+
+              .card-description {
+                color: #93949A;
+              }
+
+              .card-date {
+                color: #9A9BA1;
+              }
+            }
+
+            border-radius: 18px 18px 18px 0px;
+            padding: 1px 10px 1px 15px;
+
+            .card-heading {
+              font-size: 16px;
+            }
+
+            .card-description {
+              font-size: 11px;
+            }
+
+            .card-date {
+              font-size: 10px;
+              font-style: italic;
+              text-align: right;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+}

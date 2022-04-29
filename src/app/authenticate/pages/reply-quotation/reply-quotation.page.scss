@@ -1,0 +1,15 @@
+::ng-deep {
+  app-reply-quotation {
+    ion-content {
+      .custom-textarea {
+        opacity: 0.5;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 12px;
+        --Width: 333px;
+        height: 131px;
+
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<ion-content>
+  <form>
+    <div>
+      <div class="header">
+        <ng-container>
+          <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
+        </ng-container>
+      </div>
+      <ion-row class="ion-margin">
+        <ion-col size="12" class="text-center">
+          <img [src]="'assets/icon/otp-ico.svg'" class="logo">
+        </ion-col>
+        <ion-col size="12" class="text-center">
+          <br><br>
+          <ion-text class="recover">
+            <h1 class="tag">Enter OTP</h1>
+            <h6 class="tag2">Please enter the number code<br> send your xxx@company.com</h6>
+          </ion-text>
+        </ion-col>
+        <ion-col size="12" class="text-center">
+          <br><br>
+          <div class="userInput">
+            <input type="text" id="ist" maxlength="1">
+            <input type="text" id="sec" maxlength="1">
+            <input type="text" id="third" maxlength="1">
+            <input type="text" id="fourth" maxlength="1">
+          </div>
+        </ion-col>
+      </ion-row>
+
+
+    </div>
+  </form>
+
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-row class="next-btn ion-padding-top ion-margin ">
+    <ion-col size="12">
+      <ion-button expand="block" type="submit" routerLink="/auth/selection" class="custom-btn">CONFIRM
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

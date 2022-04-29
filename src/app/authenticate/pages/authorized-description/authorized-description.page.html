@@ -1,0 +1,53 @@
+<ion-header class="ion-padding-start ion-padding-top ion-padding-end">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form>
+    <ion-row>
+      <ion-col size="12" class="text-center ">
+        <ion-text class="recover">
+          <p class="page-heading ion-no-margin">Your Authorized Vendor</p>
+        </ion-text>
+      </ion-col>
+
+      <ion-col size="12" class="ion-margin-top ion-padding-top">
+        <ion-checkbox class="checkbox-stay-login"></ion-checkbox> &nbsp;&nbsp;
+        <ion-label>Yes! I’m Authorized</ion-label>
+      </ion-col>
+
+      <ion-col size="12" class="ion-margin-top">
+        <ion-textarea placeholder="Type here..." class="form-control custom-textarea">
+        </ion-textarea>
+      </ion-col>
+
+      <ion-col size="12" class="ion-margin-top">
+        <ion-input autocomplete="off" type="text" expand="block" class="form-control custom-textbox ion-padding"
+          placeholder="Company Authorisation Name"></ion-input>
+      </ion-col>
+
+      <ion-col size="12" class="text-center ion-margin-top ion-padding-top">
+        <img [src]="'assets/icon/upload-img-ico.svg'" class="logo">
+      </ion-col>
+
+      <ion-col size="12" class="text-center">
+        <ion-icon [src]="'assets/icon/upload-doc-ico.svg'" class="attachment-icon"></ion-icon>Upload related documents
+        <br>
+        <a href="javascript:void(0);">UPLOAD</a>
+      </ion-col>
+
+    </ion-row>
+
+  </form>
+</ion-content>
+
+<ion-footer class="ion-padding-bottom">
+  <ion-toolbar class="ion-padding-bottom">
+    <ion-button expand="block" type="submit" routerLink="/auth/assosiates" class="custom-btn">SUBMIT
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

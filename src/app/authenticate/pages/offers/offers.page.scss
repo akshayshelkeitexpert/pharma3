@@ -1,0 +1,139 @@
+::ng-deep {
+  app-offers {
+
+    ion-row {
+      &.custome-box {
+        background: #FEBA7B;
+        border-radius: 14px;
+      }
+    }
+
+
+    .header {
+      top: 38px;
+      position: relative;
+      left: 12px;
+    }
+
+    .sales {
+      position: relative;
+      top: 8rem;
+    }
+
+    .logo {
+      width: 205px;
+    }
+
+    .recover {
+      bottom: 12px;
+      position: relative;
+
+      .tag {
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      .tag2 {
+        font-size: 12px;
+      }
+    }
+
+
+
+    // .input {
+    //   position: relative;
+    //   bottom: 15px;
+    // }
+
+
+    ion-row {
+      .custom-textbox {
+        opacity: 0.5;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 60px;
+        color: #93949A;
+        padding: 7px 9px !important;
+        // margin-left: 12px !important;
+        color: black;
+      }
+
+      &.next-btn {
+        position: relative;
+        top: 21rem;
+      }
+
+      &.forgot-btn {
+        position: relative;
+        top: 5rem;
+        text-decoration: none;
+        font-size: 20px;
+      }
+    }
+
+    .menul-textbox {}
+
+    .left-icon {
+      margin-left: 10px;
+      padding: 6px;
+    }
+
+  }
+
+  ion-footer {
+    position: fixed;
+    bottom: 0px;
+  }
+
+  ion-header {
+    position: static !important;
+  }
+
+  .offer-btn {
+    --background: #FFFFFF;
+    --box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.07);
+    --border-radius: 77px 60px 60px 0px;
+    height: 52px;
+    /* margin-left: 52px; */
+    width: 215px;
+
+
+  }
+
+  .custsegment {
+    background: #e9f0f7;
+    margin: 30px;
+    height: 41px;
+    border-radius: 50px;
+    background: linear-gradient(312.9deg, rgba(255, 255, 255, 0.3) 4.49%, rgba(233, 240, 247, 0.3) 95.45%), #ffffff;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.9), 4px 4px 10px rgba(138, 155, 189, 0.4);
+    border-radius: 60px;
+
+    // --indicator-box-shadow: 1px 2px 2px #ccc;
+    ion-segment-button {
+      font-size: 12px;
+      --background-checked: linear-gradient(312.9deg, rgba(255, 255, 255, 0.3) 4.49%, rgba(233, 240, 247, 0.3) 95.45%),
+        #ffffff;
+      box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.9), inset 4px 4px 10px rgba(138, 155, 189, 0.3);
+      border-radius: 60px;
+      --indicator-color: transparent !important;
+      color: #8f9bb2;
+
+
+      ion-label {
+        margin-top: 0px;
+        margin-bottom: 8px;
+      }
+    }
+
+    .customrecentnote.selected {
+      box-shadow: none;
+    }
+
+    .customrecentcall.selected {
+      box-shadow: none;
+    }
+  }
+
+
+}
