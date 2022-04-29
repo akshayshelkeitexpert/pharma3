@@ -63,6 +63,10 @@ const routes: Routes = [
         loadChildren: () => import('../document-view/document-view.module').then(m => m.DocumentViewPageModule)
       },
       {
+        path: 'quotes',
+        loadChildren: () => import('../quotes/quotes.module').then(m => m.QuotesPageModule)
+      },
+      {
         path: 'quotenotification',
         loadChildren: () => import('../quote-notification/quote-notification.module').then(m => m.QuoteNotificationPageModule)
       },

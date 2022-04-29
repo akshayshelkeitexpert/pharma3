@@ -15,7 +15,11 @@ const routes: Routes = [
   {
     path: 'admin',
     loadChildren: () => import('./authenticate/pages/main/main.module').then(m => m.MainPageModule)
+  },  {
+    path: 'quotes',
+    loadChildren: () => import('./authenticate/pages/quotes/quotes.module').then( m => m.QuotesPageModule)
   }
+
 ];
 
 @NgModule({
