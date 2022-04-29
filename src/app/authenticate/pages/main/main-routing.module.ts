@@ -78,6 +78,10 @@ const routes: Routes = [
         path: 'replyquotation',
         loadChildren: () => import('../reply-quotation/reply-quotation.module').then(m => m.ReplyQuotationPageModule)
       },
+      {
+        path: 'quotehistory',
+        loadChildren: () => import('../quote-history/quote-history.module').then(m => m.QuoteHistoryPageModule)
+      },
 
     ]
   }

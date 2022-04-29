@@ -18,6 +18,10 @@ const routes: Routes = [
   },  {
     path: 'quotes',
     loadChildren: () => import('./authenticate/pages/quotes/quotes.module').then( m => m.QuotesPageModule)
+  },
+  {
+    path: 'quote-history',
+    loadChildren: () => import('./authenticate/pages/quote-history/quote-history.module').then( m => m.QuoteHistoryPageModule)
   }
 
 ];

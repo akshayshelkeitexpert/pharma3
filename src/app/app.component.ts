@@ -21,7 +21,8 @@ export class AppComponent {
     { title: 'quotenotification', url: '/admin/quotenotification', icon: 'warning' },
     { title: 'quotedetails', url: '/admin/quotedetails', icon: 'warning' },
     { title: 'replyquotation', url: '/admin/replyquotation', icon: 'warning' },
-    { title: 'quotes', url: '/admin/quotes', icon: 'warning' }
+    { title: 'quotes', url: '/admin/quotes', icon: 'warning' },
+    { title: 'quotehistory', url: '/admin/quotehistory', icon: 'warning' }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() { }
