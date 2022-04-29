@@ -1,0 +1,36 @@
+<ion-header class="ion-padding-start ion-padding-top ion-padding-end">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
+    </ion-buttons>
+    <ion-title>Quote Notification</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="main-heading ion-margin">
+    <ion-col size="12" class="ion-padding-start ">
+      <p class="quote-label ion-no-margin">Quote Request {{i}}</p>
+      <p class="quote-date  ion-no-margin">10th Feb’22 l 10:20 AM </p>
+    </ion-col>
+    <ion-col>
+      <p class="ion-no-margin ion-padding-start paracetamol">Paracetamol 650</p>
+    </ion-col>
+
+  </ion-row>
+  <ng-container *ngFor="let i of [1,2,3,4,5,6,7,8]">
+    <ion-row class="ion-margin main-row ion-padding" routerLink="/admin/quotedetails">
+      <ion-col size="12" class="ion-no-padding ion-padding-start">
+        <p class="paracetamol">Paracetamol 650</p>
+        <p><span>Manufacturer Name:</span>&nbsp; <span>Lorem Ipsum name</span></p>
+        <p><span>Expiry Date:</span>&nbsp; <span>03 april 23</span></p>
+        <p><span>Quantity:</span>&nbsp; <span>5 Carton</span></p>
+        <p><span>Batch:</span>&nbsp; <span>Strip</span></p>
+        <p><span>Unit:</span>&nbsp; <span>5</span></p>
+        <p><span>MRP:</span>&nbsp; <span>₹6999.50</span></p>
+        <p><span>Net Price per unit</span>&nbsp; <span>569.25</span></p>
+      </ion-col>
+    </ion-row>
+  </ng-container>
+
+</ion-content>

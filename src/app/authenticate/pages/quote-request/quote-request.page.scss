@@ -1,0 +1,133 @@
+::ng-deep {
+  app-quote-request {
+    ion-content {
+      .main-heading {
+        ion-col:nth-child(1) {
+          justify-content: space-between;
+          display: inline-flex;
+
+          .quote-label {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 16px;
+            color: #10A8A0;
+          }
+
+          .quote-date {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 16px;
+            color: #31333D;
+            opacity: 0.5;
+          }
+        }
+
+        .paracetamol {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 28px;
+          line-height: 16px;
+          /* identical to box height, or 57% */
+
+
+          color: #31333D;
+
+        }
+      }
+
+      .main-row {
+        background: #f6f8fa;
+        border-radius: 31px 31px 31px 0px;
+
+        .paracetamol {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 16px;
+          /* identical to box height, or 89% */
+
+
+          color: #31333D;
+        }
+
+        // ion-col:nth-child(1) {
+        //   justify-content: space-between;
+        //   display: inline-flex;
+
+        //   .quote-label {
+        //     color: #10a8a0;
+        //     font-size: 16px;
+        //   }
+
+        //   .quote-date {
+        //     font-size: 10px;
+        //     color: #31333d;
+        //   }
+        // }
+
+        ion-col:nth-child(1) {
+          font-size: 14px;
+
+          .user-name {
+            font-size: 18px;
+            color: #3e3d3d;
+          }
+
+          p {
+            padding: 4px 0px;
+
+            &.user-address,
+            span {
+              font-family: 'Roboto';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 16px;
+              /* identical to box height, or 100% */
+
+
+              color: #31333D;
+              ;
+            }
+
+            strong {
+              font-family: 'Roboto';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 16px;
+              /* identical to box height, or 100% */
+
+
+              color: #31333D;
+            }
+
+
+            &.user-address {
+              ion-icon {
+                position: absolute;
+                left: -5px;
+                height: 15px;
+                width: 12px;
+              }
+            }
+
+            &.prod-name {
+              color: black;
+            }
+          }
+        }
+
+        p {
+          margin: 0px !important;
+        }
+      }
+    }
+  }
+}
