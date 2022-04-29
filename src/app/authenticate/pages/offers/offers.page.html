@@ -11,47 +11,34 @@
     <ion-row>
       <ion-segment value="RecentNote" class="custsegment">
         <ion-segment-button value="RecentNote" class="customrecentnote">
-          <ion-label>Recent Note</ion-label>
+          <ion-label>My Offer</ion-label>
         </ion-segment-button>
         <ion-segment-button class="customrecentcall">
-          <ion-label>Recent Call</ion-label>
+          <ion-label>Receive Offer</ion-label>
         </ion-segment-button>
       </ion-segment>
     </ion-row>
-    <ion-row class="ion-margin custome-box">
-      <ion-col size="12" class="">
-        <ion-text>
-          <p class="offer-heading">Offer on<br><strong> Paracetamol</strong></p>
-          <p>of 5 Carton on purchase
+
+    <ng-container *ngFor="let offer of offers">
+      <ion-row class="ion-margin custom-box" [ngClass]="offer.type">
+        <ion-col size="12">
+          <p class="offer-heading">Offer on</p>
+          <p class="offer-name"><strong>Paracetamol</strong></p>
+          <p class="on-purchase-off">of 5 Carton on purchase</p>
+        </ion-col>
+        <ion-col size="12">
+          <p class="end-on">End on : 5th May</p>
+          <p class="left-date-time"> Left: &nbsp;
+            <span>2</span> :
+            <span>42</span> :
+            <span>12</span>
           </p>
-        </ion-text>
-      </ion-col>
-      <ion-col class="ion-no-margin">
-        <p>End on : 5th May</p>
-        <p>Left:</p>
-      </ion-col>
-    </ion-row>
-  </div>
-  <ion-row class="text-center ion-margin">
-    <ion-col size="12">
-      <ion-button expand="block" type="submit" routerLink="/auth/assosiates" class="offer-btn">View Offer
-      </ion-button>
-    </ion-col>
-  </ion-row>
-</ion-content>
-<!-- <ng-container>
-    <div>
-      <ion-row class="ion-margin sales">
-        <ion-col size="12" class="text-center">
-          <img [src]="'assets/icon/mysales-ico.svg'" class="logo">
         </ion-col>
-        <ion-col size="12" class="text-center">
-          <ion-text class="recover">
-            <p class="tag">There are no broadcuast sale offer of you<br> at this moment</p>
-            <p class="tag2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Ullamcorper gravida et sit est
-            </p>
-          </ion-text>
-        </ion-col>
+        <div routerLink="/auth/assosiates" class="offer-btn">View Offer
+        </div>
       </ion-row>
-    </div>
- </ng-container> -->
+    </ng-container>
+
+  </div>
+
+</ion-content>

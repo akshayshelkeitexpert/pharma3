@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OffersPage implements OnInit {
 
+  public offers: any[] = [
+    { type: 'success' },
+    { type: 'warning' },
+    { type: 'info' }
+  ];
+
   constructor() { }
 
   ngOnInit() {
