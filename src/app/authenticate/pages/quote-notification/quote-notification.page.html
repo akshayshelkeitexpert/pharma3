@@ -8,23 +8,25 @@
 </ion-header>
 
 <ion-content>
-  <ion-row class="ion-margin">
-    <ion-col size="6">
-      <p>Quote Request 1</p>
-      <p>Rajesh Mahato</p>
-    </ion-col>
-    <ion-col size="6">
-      <p>10th Feb’22 l 10:20 AM </p>
-    </ion-col>
-    <ion-col>
-      <p>
-        <ion-icon [src]="'assets/icon/upload-doc-ico.svg'"></ion-icon>Lorem ipsum area, Baladiabandha, Dhenkanal,
-        Odisha - 759027
-      </p>
-      <p><span>Product name:</span><strong>Paracetamol 650</strong></p>
-      <p><span>Manufacturer Name:</span> <strong>Lorem Ipsum name</strong></p>
-      <p><span>Quantity</span><strong>5 Carton</strong></p>
-      <p><span>Unit</span><strong>Strip</strong></p>
-    </ion-col>
-  </ion-row>
+
+  <ng-container *ngFor="let i of [1,2,3,4,5,6,7,8]">
+    <ion-row class="ion-margin main-row ion-padding" routerLink="/admin/quotedetails">
+      <ion-col size="12" class="ion-padding-start">
+        <p class="quote-label">Quote Request {{i}}</p>
+        <p class="quote-date">10th Feb’22 l 10:20 AM </p>
+      </ion-col>
+
+      <ion-col size="12" class="ion-no-padding ion-padding-start">
+        <p class="user-name">Rajesh Mahato</p>
+        <p class="user-address">
+          <ion-icon [src]="'assets/icon/location-ico.svg'"></ion-icon>Lorem ipsum area, Baladiabandha, Dhenkanal,
+          Odisha - 759027
+        </p>
+        <p class="prod-name">Paracetamol 650</p>
+        <p class="quantity"><span>Quantity:</span>&nbsp; <strong>5 Carton</strong></p>
+        <p class="unit"><span>Average Order Value: &nbsp;₹1500: </span></p>
+      </ion-col>
+    </ion-row>
+  </ng-container>
+
 </ion-content>
