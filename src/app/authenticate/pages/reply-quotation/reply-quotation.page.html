@@ -10,61 +10,68 @@
 <ion-content>
   <ion-row class="ion-padding">
     <ion-col size="12">
-      <ion-label class="offer-page">Product Name</ion-label>
+      <ion-label class="title">Product Name</ion-label>
+      <br><br>
+      <ion-input type="text" expand="block" class="form-control custom-textbox">
+      </ion-input>
+    </ion-col>
+    <br><br>
+    <ion-col size="12">
+      <ion-label class="title">Quantity</ion-label>
       <br><br>
       <ion-input type="text" expand="block" class="form-control custom-textbox">
       </ion-input>
     </ion-col>
     <ion-col size="12">
-      <ion-label class="offer-page">Quantity</ion-label>
+      <ion-label class="title">Unit</ion-label>
       <br><br>
       <ion-input type="text" expand="block" class="form-control custom-textbox">
       </ion-input>
     </ion-col>
     <ion-col size="12">
-      <ion-label class="offer-page">Unit</ion-label>
+      <ion-label class="title">Manufacturer Name</ion-label>
       <br><br>
       <ion-input type="text" expand="block" class="form-control custom-textbox">
       </ion-input>
     </ion-col>
     <ion-col size="12">
-      <ion-label class="offer-page">Manufacturer Name</ion-label>
+      <ion-label class="title">Batch</ion-label>
       <br><br>
       <ion-input type="text" expand="block" class="form-control custom-textbox">
       </ion-input>
     </ion-col>
     <ion-col size="12">
-      <ion-label class="offer-page">Batch</ion-label>
+      <ion-label class="title">MRP</ion-label>
       <br><br>
       <ion-input type="text" expand="block" class="form-control custom-textbox">
       </ion-input>
     </ion-col>
     <ion-col size="12">
-      <ion-label class="offer-page">MRP</ion-label>
+      <ion-label class="title">Net Price Per Unit </ion-label>
       <br><br>
       <ion-input type="text" expand="block" class="form-control custom-textbox">
       </ion-input>
     </ion-col>
     <ion-col size="12">
-      <ion-label class="offer-page">Net Price Per Unit </ion-label>
-      <br><br>
-      <ion-input type="text" expand="block" class="form-control custom-textbox">
-      </ion-input>
-    </ion-col>
-    <ion-col size="12">
-      <ion-label class="offer-page">Expiry Date</ion-label>
+      <ion-label class="title">Expiry Date</ion-label>
       <br><br>
       <ion-input type="text" expand="block" class="form-control custom-textbox" placeholder="--select--">
         <ion-icon class="right-icon" [src]="'assets/icon/date-range-ico.svg'"></ion-icon>
       </ion-input>
     </ion-col>
+
     <ion-col size="12">
       <br>
-      <ion-label class="offer-page">Type here text which will go on your offer banner</ion-label>
-      <br>
-      <ion-textarea placeholder="Enter more information here..." class="form-control custom-textarea"></ion-textarea>
+      <ion-textarea placeholder="Type here text......" class="form-control custom-textarea ion-padding ">
+      </ion-textarea>
     </ion-col>
   </ion-row>
 
+  <ion-row class="next-btn ion-padding-top ion-margin ">
+    <ion-col size="12">
+      <ion-button expand="block" type="submit" routerLink="/auth/selection" class="custom-btn">SEND
+      </ion-button>
+    </ion-col>
+  </ion-row>
 
 </ion-content>
