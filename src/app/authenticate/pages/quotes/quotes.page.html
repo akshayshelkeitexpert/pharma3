@@ -7,20 +7,20 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-row class="custom-textbox">
-    <ion-col siz="8" class="i">
-      <p class="ion-no-margin title1">Quotes</p>
-      <p class="ion-no-margin title2">Paracetamol 650</p>
-      <p class="ion-no-margin title3">10th Feb’22 l 10:20 AM </p>
-    </ion-col>
-    <ion-col size="4">
-      <ion-icon [src]="'assets/icon/upload-doc-ico.svg'" class="attachment-icon">
-      </ion-icon>
-
-      <p class="ion-no-margin reply">15 Reply</p>
-      <ion-button class="btn">view all</ion-button>
-    </ion-col>
-  </ion-row>
-
+<ion-content class="ion-padding">
+  <ng-container *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]">
+    <ion-row class="main-row">
+      <ion-col size="7" class="ion-no-padding">
+        <p class="quote-count">Quotes Request {{item}}</p>
+        <p class="med-name">Paracetamol 650</p>
+        <p class="date">10th Feb’22 l 10:20 AM </p>
+      </ion-col>
+      <ion-col size="4" class="ion-no-padding">
+        <p class="reply">
+          <ion-icon [src]="'assets/icon/reply-ico.svg'" class="attachment-icon"></ion-icon> &nbsp;&nbsp; 15 Reply
+        </p>
+        <ion-button class="btn">view all</ion-button>
+      </ion-col>
+    </ion-row>
+  </ng-container>
 </ion-content>
