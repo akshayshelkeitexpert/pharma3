@@ -1,0 +1,39 @@
+<ion-header class="ion-padding-start ion-padding-top ion-padding-end">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
+    </ion-buttons>
+    <ion-title>Quote History</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ng-container *ngFor="let i of [1,2,3,4,5,6,7,8]">
+    <ion-row class="ion-margin main-row ion-padding" routerLink="/admin/quotedetails">
+      <ion-col size="12" class="ion-padding-start">
+        <p class="quote-label">Quote Request {{i}}</p>
+        <p class="quote-date">10th Feb’22 l 10:20 AM </p>
+      </ion-col>
+
+      <ion-col size="12" class="ion-no-padding ion-padding-start">
+        <p class="user-name">Rajesh Mahato</p>
+        <p class="user-address">
+          <ion-icon [src]="'assets/icon/location-ico.svg'"></ion-icon>Lorem ipsum area, Baladiabandha, Dhenkanal,
+          Odisha - 759027
+        </p>
+        <br>
+        <p class="message">Message</p>
+        <p class="prod-name"><span>Product name:</span>&nbsp; <strong>Paracetamol 650</strong></p>
+        <p class="quantity"><span>Manufacturer Name:</span>&nbsp; <strong>Lorem Ipsum name</strong></p>
+        <p class="quantity"><span>Quantity:</span>&nbsp; <strong>5 Carton</strong></p>
+        <p class="quantity"><span>Unit:</span>&nbsp; <strong>5</strong></p>
+        <p class="quantity"><span>Batch:</span>&nbsp; <strong>Strip</strong></p>
+        <p class="quantity"><span>Expiry Date:</span>&nbsp; <strong>03 april 23</strong></p>
+        <p class="quantity"><span>Net Price per unit</span>&nbsp; <strong>569.25</strong></p>
+
+      </ion-col>
+    </ion-row>
+  </ng-container>
+
+</ion-content>
