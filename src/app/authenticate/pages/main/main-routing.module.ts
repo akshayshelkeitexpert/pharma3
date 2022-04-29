@@ -9,13 +9,17 @@ const routes: Routes = [
     component: MainPage,
     children: [
       {
-        path: 'notification',
-        loadChildren: () => import('../notification/notification.module').then(m => m.NotificationPageModule)
+        path: '',
+        redirectTo: 'selection',
+        pathMatch: 'full'
       },
       {
-        path: '',
-        redirectTo: 'replyquotation',
-        pathMatch: 'full'
+        path: 'selection',
+        loadChildren: () => import('../selction/selction.module').then(m => m.SelctionPageModule)
+      },
+      {
+        path: 'notification',
+        loadChildren: () => import('../notification/notification.module').then(m => m.NotificationPageModule)
       },
       {
         path: 'accountsetting',

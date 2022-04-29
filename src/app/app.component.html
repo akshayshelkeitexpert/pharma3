@@ -1,13 +1,18 @@
 <ion-app>
   <ion-split-pane contentId="main-content">
     <ion-menu contentId="main-content" type="overlay">
-      <ion-content>
+      <ion-content class="loggedin-user-sidebar" style="--box-shadow: 5px 4px 13px rgba(0, 0, 0, 0.01) !important;
+      border-radius: 0px 86px 0px 0px !important;">
         <ion-list id="inbox-list">
-          <ion-list-header>Inbox</ion-list-header>
-          <ion-note>hi@ionicframework.com</ion-note>
+          <ion-avatar slot="start">S</ion-avatar>
+          <ion-list-header>
+            <h2> Hi! Rajib</h2>
+          </ion-list-header>
+          <ion-note>rajib002@pharma3.com</ion-note>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false"
+              routerLinkActive="selected">
               <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
               <ion-label>{{ p.title }}</ion-label>
             </ion-item>

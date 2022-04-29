@@ -26,10 +26,6 @@ const routes: Routes = [
         loadChildren: () => import('../otp/otp.module').then(m => m.OtpPageModule)
       },
       {
-        path: 'selection',
-        loadChildren: () => import('../selction/selction.module').then(m => m.SelctionPageModule)
-      },
-      {
         path: 'mapselction',
         loadChildren: () => import('../map-selction/map-selction.module').then(m => m.MapSelctionPageModule)
       },

@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
+    { title: 'notification', url: '/admin/notification', icon: 'warning' },
     { title: 'quoterequest', url: '/admin/quoterequest', icon: 'warning' },
     { title: 'replyquotation', url: '/admin/replyquotation', icon: 'mail' },
     { title: 'accountsetting', url: '/admin/accountsetting', icon: 'paper-plane' },

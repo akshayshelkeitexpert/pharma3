@@ -2,6 +2,30 @@ ion-menu ion-content {
   --background: var(--ion-item-background, var(--ion-background-color, #fff));
 }
 
+.loggedin-user-sidebar {
+  ion-list {
+    ion-avatar {
+      background: #10a8a0;
+      align-items: center;
+      justify-content: center;
+      display: inline-flex;
+      font-size: 41px;
+      color: white;
+      margin-left: 15px;
+    }
+
+    ion-list-header {
+      h2 {
+        background: linear-gradient(182.01deg, #10a8a0 3.99%, #83c24c 98.3%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
+  }
+}
+
 ion-menu.md ion-content {
   --padding-start: 8px;
   --padding-end: 8px;
@@ -19,7 +43,7 @@ ion-menu.md ion-note {
 
 ion-menu.md ion-list-header,
 ion-menu.md ion-note {
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 ion-menu.md ion-list#inbox-list {
