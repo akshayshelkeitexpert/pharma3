@@ -1,11 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons class="humbergger-menu" slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons class="right-icons" slot="end">
+      <ion-icon class="add-user-icon" slot="end" [src]="'assets/icon/add-user-icon.svg'"></ion-icon>
+      <ion-icon class="notification-icon" slot="end" [src]="'assets/icon/notification-icon.svg'"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content>
   <form>
     <div class="login-screen">
-      <div class="header">
-        <ng-container>
-          <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
-        </ng-container>
-      </div>
       <div class="text-center top-logo ion-padding ion-margin">
         <ion-row class="ion-margin">
           <ion-col size="12" class="text-center">

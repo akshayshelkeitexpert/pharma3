@@ -25,6 +25,7 @@ export class AppComponent {
     { title: 'replyquotation', url: '/admin/replyquotation', icon: 'warning' },
     { title: 'quotes', url: '/admin/quotes', icon: 'warning' },
     { title: 'quotehistory', url: '/admin/quotehistory', icon: 'warning' },
+    { title: 'Logout', url: '/auth', icon: 'warning' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() { }
