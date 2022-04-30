@@ -1,17 +1,35 @@
 ::ng-deep {
   app-selction {
+    ion-header {
+      ion-toolbar {
+        padding-right: 15px;
+        ion-buttons {
+          &.humbergger-menu {
+          }
+
+          &.right-icons {
+            .notification-icon {
+              width: 16px;
+              height: 19.5px;
+            }
+            .add-user-icon {
+              width: 24px;
+              height: 16px;
+            }
+          }
+        }
+      }
+    }
 
     .selction-btn {
-      --background: #83C24C !important;
-      ;
-
+      --background: #83c24c !important;
       --border-radius: 83px 60px 60px 0px !important;
       height: 54px;
       --box-shadow: none;
     }
 
     .selction-btn1 {
-      --background: #10A8A0;
+      --background: #10a8a0;
       --border-radius: 83px 60px 60px 0px !important;
       height: 54px;
       --box-shadow: none;
@@ -30,10 +48,8 @@
       &.next-btn {
         position: relative;
         top: 10rem;
-
       }
     }
-
 
     .password {
       text-decoration: none;
@@ -52,6 +68,5 @@
         text-decoration: none;
       }
     }
-
   }
 }

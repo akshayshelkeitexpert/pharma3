@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
+    { title: 'notification', url: '/admin/notification', icon: 'warning' },
+    { title: 'quoterequest', url: '/admin/quoterequest', icon: 'warning' },
     { title: 'replyquotation', url: '/admin/replyquotation', icon: 'mail' },
     { title: 'accountsetting', url: '/admin/accountsetting', icon: 'paper-plane' },
     { title: 'search', url: '/admin/search', icon: 'heart' },
@@ -27,6 +29,8 @@ export class AppComponent {
     { title: 'offerdetails', url: '/admin/offerdetails', icon: 'warning' },
     { title: 'selectvendor', url: '/admin/selectvendor', icon: 'warning' },
     { title: 'requestforquotes', url: '/admin/requestforquotes', icon: 'warning' },
+    { title: 'Logout', url: '/auth', icon: 'warning' },
+
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() { }

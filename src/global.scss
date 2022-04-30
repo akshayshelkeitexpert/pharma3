@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -26,7 +26,7 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 * {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
 }
 
@@ -34,9 +34,8 @@
   text-align: center;
 }
 
-
 .custom-btn {
-  --background: linear-gradient(265.89deg, #10A8A0 11.68%, #83C24C 89.65%) !important;
+  --background: linear-gradient(265.89deg, #10a8a0 11.68%, #83c24c 89.65%) !important;
   --border-radius: 83px 60px 60px 0px !important;
   height: 54px;
   --box-shadow: none;
@@ -50,6 +49,12 @@
 
 ion-header {
   &.header-md::after {
+    background-image: none !important;
+  }
+}
+
+ion-footer {
+  &.footer-md::before {
     background-image: none !important;
   }
 }
