@@ -1,0 +1,136 @@
+::ng-deep {
+  app-selected-vendors {
+    ion-content {
+      .title1 {
+        background: linear-gradient(265.89deg, #10A8A0 11.68%, #83C24C 89.65%);
+        border-radius: 10px 10px 10px 0px;
+        height: 28px;
+        width: 91px;
+        text-align: center;
+        left: -19px;
+        /* height: 15px; */
+        position: relative;
+        color: white;
+        padding: 4px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .prod-name {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 16px;
+        /* identical to box height, or 89% */
+        margin-top: 10px !important;
+        color: #31333D;
+      }
+
+      .main-row {
+        background: #f6f8fa;
+        border-radius: 31px 31px 31px 0px;
+
+        ion-col:nth-child(1) {
+          justify-content: space-between;
+          display: inline-flex;
+
+          .quote-label {
+            color: #10a8a0;
+            font-size: 16px;
+            margin: 0px;
+
+          }
+
+          .quote-date {
+            font-size: 10px;
+            color: #31333d;
+            margin: 0px;
+
+          }
+        }
+
+        ion-col:nth-child(2) {
+          justify-content: space-between;
+          display: inline-flex;
+
+          .med-name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 16px;
+            /* identical to box height, or 67% */
+            color: #31333D;
+            margin: 0px;
+
+          }
+
+          .quote-date {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 16px;
+            /* identical to box height, or 160% */
+
+            margin: 0px;
+
+            color: #31333D;
+
+            opacity: 0.5;
+          }
+        }
+
+        ion-col:nth-child(3) {
+          font-size: 14px;
+
+          .user-name {
+            font-size: 18px;
+            color: #3e3d3d;
+          }
+
+          p {
+            margin: 0px;
+            padding: 2px 0px;
+            margin-top: 4px;
+
+            &.user-address,
+            span {
+              color: #93949a;
+              font-size: 14px;
+            }
+
+            &.user-address {
+              ion-icon {
+                position: absolute;
+                left: -5px;
+                height: 15px;
+                width: 12px;
+              }
+            }
+
+
+          }
+        }
+
+        // p {
+        //   margin: 0px !important;
+        // }
+      }
+
+      .next-btn {
+
+        .custom {
+          --background: #05549C;
+          --border-radius: 60px;
+          height: 33px;
+          width: 140px;
+          color: white;
+        }
+      }
+    }
+  }
+}

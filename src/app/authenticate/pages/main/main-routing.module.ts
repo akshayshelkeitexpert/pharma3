@@ -86,6 +86,19 @@ const routes: Routes = [
         path: 'quoterequest',
         loadChildren: () => import('../quote-request/quote-request.module').then(m => m.QuoteRequestPageModule)
       },
+      {
+        path: 'offerdetails',
+        loadChildren: () => import('../offer-details/offer-details.module').then(m => m.OfferDetailsPageModule)
+      },
+      {
+        path: 'selectvendor',
+        loadChildren: () => import('../selected-vendors/selected-vendors.module').then(m => m.SelectedVendorsPageModule)
+      },
+      {
+        path: 'requestforquotes',
+        loadChildren: () => import('../request-for-quotes/request-for-quotes.module').then(m => m.RequestForQuotesPageModule)
+      },
+
 
     ]
   }

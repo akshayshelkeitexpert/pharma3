@@ -1,0 +1,45 @@
+<ion-header class="ion-padding-start ion-padding-top ion-padding-end">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
+    </ion-buttons>
+    <ion-title>Offer Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-margin-bottom">
+
+  <ng-container *ngFor="let i of [1,]">
+    <ion-row class="ion-margin main-row ion-padding-top ion-pdding" routerLink="/admin/quotedetails">
+      <ion-col size="12" class="ion-no-padding ion-padding-start">
+        <p class="user-name">Offer Product Name</p>
+        <p class="prod-name">Paracetamol 650</p>
+        <br>
+        <p class="user-name">Date Range</p>
+        <p class="prod-name">25th April to 5th May</p>
+        <br>
+        <p class="user-name">Description</p>
+        <p class="prod-name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          tellus, amet vel. </p>
+        <br>
+        <p class="user-name">Offer Send to</p>
+        <p class="prod-name">All Members </p>
+        <br>
+
+      </ion-col>
+    </ion-row>
+  </ng-container>
+
+
+</ion-content>
+<ion-footer class="ion-no-border ion-padding-bottom">
+  <ion-row class="next-btn ion-padding-top ion-margin ">
+    <ion-col size="12">
+
+      <ion-button expand="block" type="submit" routerLink="/auth/selection" class="call-btn">
+        <ion-icon [src]="'assets/icon/call-ico.svg'" class="attachment-icon"></ion-icon>
+        CALL
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

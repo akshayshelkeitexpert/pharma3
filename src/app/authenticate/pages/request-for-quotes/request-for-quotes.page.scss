@@ -1,0 +1,114 @@
+::ng-deep {
+  app-request-for-quotes {
+    ion-content {
+      .heading {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 126.39%;
+        /* or 35px */
+
+
+        color: #31333D;
+      }
+
+      .sub-heading {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 126.39%;
+        /* or 20px */
+
+        text-align: center;
+
+        color: #31333D;
+
+      }
+
+      .check-button {
+        justify-content: space-between;
+        display: inline-flex;
+      }
+
+      .check-box {
+
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 6px;
+
+      }
+
+      .title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        /* identical to box height, or 100% */
+
+
+        color: #10A8A0;
+      }
+
+      p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 40px;
+        /* or 247% */
+
+
+        color: #3E3D3D;
+      }
+
+      .check-item {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        /* identical to box height, or 100% */
+
+
+        color: #10A8A0;
+
+      }
+
+      .attachment-icon {
+        width: 9px;
+        height: 10px;
+        position: relative;
+        right: 16px;
+      }
+
+      .attachment-icon1 {
+        width: 9px;
+        height: 10px;
+        position: relative;
+        right: 6px;
+      }
+
+      .redio-offer {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        /* identical to box height, or 100% */
+
+
+        color: #10A8A0;
+
+      }
+
+      ion-radio-group {
+        .radio-btn {
+          margin-right: 12px !important;
+        }
+      }
+    }
+  }
+}

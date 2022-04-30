@@ -23,7 +23,10 @@ export class AppComponent {
     { title: 'replyquotation', url: '/admin/replyquotation', icon: 'warning' },
     { title: 'quotes', url: '/admin/quotes', icon: 'warning' },
     { title: 'quotehistory', url: '/admin/quotehistory', icon: 'warning' },
-    { title: 'quoterequest', url: '/admin/quoterequest', icon: 'warning' }
+    { title: 'quoterequest', url: '/admin/quoterequest', icon: 'warning' },
+    { title: 'offerdetails', url: '/admin/offerdetails', icon: 'warning' },
+    { title: 'selectvendor', url: '/admin/selectvendor', icon: 'warning' },
+    { title: 'requestforquotes', url: '/admin/requestforquotes', icon: 'warning' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() { }

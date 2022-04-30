@@ -26,6 +26,18 @@ const routes: Routes = [
   {
     path: 'quote-request',
     loadChildren: () => import('./authenticate/pages/quote-request/quote-request.module').then( m => m.QuoteRequestPageModule)
+  },
+  {
+    path: 'selected-vendors',
+    loadChildren: () => import('./authenticate/pages/selected-vendors/selected-vendors.module').then( m => m.SelectedVendorsPageModule)
+  },
+  {
+    path: 'offer-details',
+    loadChildren: () => import('./authenticate/pages/offer-details/offer-details.module').then( m => m.OfferDetailsPageModule)
+  },
+  {
+    path: 'request-for-quotes',
+    loadChildren: () => import('./authenticate/pages/request-for-quotes/request-for-quotes.module').then( m => m.RequestForQuotesPageModule)
   }
 
 ];
