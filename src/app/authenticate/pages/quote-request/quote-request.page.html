@@ -1,7 +1,7 @@
 <ion-header class="ion-padding-start ion-padding-top ion-padding-end">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
+      <ion-icon name="chevron-back-sharp" class="back-arrow" (click)="prevTab()"></ion-icon>
     </ion-buttons>
     <ion-title>Quote Request 1</ion-title>
   </ion-toolbar>
@@ -23,8 +23,8 @@
       <ion-col size="12" class="ion-no-padding">
         <div class="quote-number"> <span>Quote {{i+1}}</span> </div>
         <div class="quote-ico-opt">
-          <ion-icon [src]="'assets/icon/call-icon.svg'"></ion-icon>
-          <ion-icon [src]="'assets/icon/contact-icon.svg'"></ion-icon>
+          <ion-icon [src]="'assets/icon/call-icon.svg'" routerLink="/admin/selectvendor"></ion-icon>
+          <ion-icon [src]="'assets/icon/contact-icon.svg'" routerLink="/admin/quotesprofile"></ion-icon>
         </div>
       </ion-col>
     </ion-row>

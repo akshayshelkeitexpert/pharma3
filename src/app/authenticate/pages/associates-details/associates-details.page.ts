@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-associates-details',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AssociatesDetailsPage implements OnInit {
 
-  constructor() { }
+  constructor(private nav: NavController) { }
 
   ngOnInit() {
   }
-
+  prevTab() {
+    this.nav.navigateRoot('/admin/associateslist')
+  }
 }

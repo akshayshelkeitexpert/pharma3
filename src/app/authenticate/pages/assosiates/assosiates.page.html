@@ -1,11 +1,20 @@
+<ion-header>
+  <ion-toolbar clas="ion-padding-top ">
+    <ion-buttons class="humbergger-menu" slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <!-- <ion-title style="padding-top:35px">Authorized Vendor</ion-title> -->
+    <ion-buttons class="right-icons ion-margin-end header-icon" slot="end">
+
+      <ion-icon class="notification-icon" slot="end" [src]="'assets/icon/notification-icon.svg'"></ion-icon>
+
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
 <ion-content>
   <form>
     <div class="login-screen">
-      <div class="header">
-        <ng-container>
-          <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
-        </ng-container>
-      </div>
       <ion-row class="ion-margin ion-padding">
         <ion-col size="12" class="text-center">
           <ion-text class="recover">
@@ -23,16 +32,14 @@
           </ion-input>
         </ion-col>
       </ion-row>
-
-
-      <br>
-      <ion-row class="next-btn ion-padding-top ion-margin ">
-        <ion-col size="12">
-          <ion-button expand="block" type="submit" routerLink="/auth/assosiates" class="custom-btn">ADD
-          </ion-button>
-        </ion-col>
-      </ion-row>
-      <br>
     </div>
   </form>
 </ion-content>
+<footer>
+  <ion-row class=" ion-padding-bottom ion-margin ">
+    <ion-col size="12">
+      <ion-button expand="block" type="submit" routerLink="/admin/associateslist" class="custom-btn">ADD
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</footer>

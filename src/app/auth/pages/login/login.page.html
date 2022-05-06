@@ -10,7 +10,7 @@
       <ion-row lines="none" class="ion-margin ion-padding-top">
         <ion-col size="12">
           <ion-input autocomplete="off" type="text" expand="block" class="form-control custom-textbox"
-            placeholder="Email address">
+            placeholder="UID">
             <ion-icon [src]="'assets/icon/email-ico.svg'" class="left-icon" item-left></ion-icon>
           </ion-input>
         </ion-col>
@@ -36,7 +36,7 @@
 
       <ion-row class="next-btn ion-padding-top ion-margin">
         <ion-col size="12">
-          <ion-button expand="block" type="submit" routerLink="/admin" class="custom-btn">Next
+          <ion-button expand="block" type="submit" (click)="login()" class="custom-btn">Next
           </ion-button>
         </ion-col>
         <ion-col class="text-center" size="12">
@@ -48,7 +48,7 @@
         <ion-col class="terms-policy" size="12">
           <ion-text color="medium" class="text-center ">
             <p class="footer-text ion-no-margin">
-              By Signing in you agree to our <br>
+              By Signing in you agree to our
               <a class="password" href="javascript:void(0);">Terms & conditions</a>
               and
               <a class="password" href="javascript:void(0);">Privacy policy</a>

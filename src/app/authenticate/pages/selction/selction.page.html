@@ -1,11 +1,12 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons class="humbergger-menu" slot="start">
+  <ion-toolbar clas="ion-padding-top ">
+    <!-- <ion-buttons class="humbergger-menu" slot="start">
       <ion-menu-button></ion-menu-button>
-    </ion-buttons>
+    </ion-buttons> -->
 
-    <ion-buttons class="right-icons" slot="end">
-      <ion-icon class="add-user-icon" slot="end" [src]="'assets/icon/add-user-icon.svg'"></ion-icon>
+    <ion-buttons class="right-icons xyz" slot="end">
+      <ion-icon class="add-user-icon" slot="end" [src]="'assets/icon/add-user-icon.svg'" (click)="showPopover($event)">
+      </ion-icon>
       <ion-icon class="notification-icon" slot="end" [src]="'assets/icon/notification-icon.svg'"></ion-icon>
     </ion-buttons>
   </ion-toolbar>
@@ -26,17 +27,28 @@
             </ion-text>
           </ion-col>
         </ion-row>
-        <ion-row class="next-btn  ">
-          <ion-col size="12">
-            <ion-button expand="block" type="submit" class="selction-btn">Buy Now
-            </ion-button>
-          </ion-col>
-          <ion-col size="12">
-            <ion-button expand="block" type="submit" class="selction-btn1">Sell Now
-            </ion-button>
-          </ion-col>
-        </ion-row>
       </div>
     </div>
+    <ion-row class="next-btn ion-margin">
+      <ion-col size="12">
+
+        <ion-button expand="block" (click)="setRole('BUYER')" type="button" class="selction-btn"
+          routerLink="/admin/requestforquotes">
+          <span class="ion-text-left">Buy Now</span>
+          <p class="buy-img">
+            <ion-icon [src]="'assets/icon/buyer-ico.svg'" class="attachment-icon"></ion-icon>
+          </p>
+        </ion-button>
+      </ion-col>
+      <ion-col size="12">
+        <ion-button expand="block" (click)="setRole('SELLER')" type="button" class="selction-btn1"
+          routerLink="/admin/offersone">
+          <span class="ion-text-left">Sell Now</span>
+          <p class="buy-img">
+            <ion-icon [src]="'assets/icon/sell-ico.svg'" class="attachment-icon"></ion-icon>
+          </p>
+        </ion-button>
+      </ion-col>
+    </ion-row>
   </form>
 </ion-content>

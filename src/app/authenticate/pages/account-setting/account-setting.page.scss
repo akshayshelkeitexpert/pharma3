@@ -19,10 +19,13 @@
           --background: #F6F8FA;
           --border-radius: 31px 60px 60px 0px;
 
+
+
           //   height: 75px;
           .details-ele {
             position: relative;
             left: 1pc;
+
 
             ion-label:nth-child(1) {
               margin-bottom: 4px;
@@ -55,4 +58,6 @@
       }
     }
   }
+
+
 }

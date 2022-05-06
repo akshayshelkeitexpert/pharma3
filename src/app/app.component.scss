@@ -1,4 +1,5 @@
 ion-menu ion-content {
+
   --background: var(--ion-item-background, var(--ion-background-color, #fff));
 }
 
@@ -29,6 +30,7 @@ ion-menu ion-content {
       --margin-end: 8px;
       --margin-top: 20px;
       --margin-bottom: 20px;
+      --border-top-right-radius: 100px !important;
     }
 
     .line-horiz {
@@ -42,6 +44,7 @@ ion-menu ion-content {
         color: #31333d;
         font-size: 16px;
       }
+
       .forward-arrow {
         height: 10px;
         width: 6px;
@@ -169,4 +172,10 @@ ion-note {
 
 ion-item.selected {
   --color: var(--ion-color-primary);
+}
+
+ion-icon {
+  &.logo {
+    height: 16px;
+  }
 }

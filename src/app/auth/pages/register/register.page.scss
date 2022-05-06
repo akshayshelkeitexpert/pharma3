@@ -39,9 +39,11 @@
         box-sizing: border-box;
         border-radius: 60px;
         color: #93949A;
+        font-size: 14px;
         padding: 7px 9px !important;
         // margin-left: 12px !important;
-        color: black;
+        color: #93949A;
+
       }
 
       &.next-btn {
@@ -68,22 +70,68 @@
 
   .custom {
 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 126.39%;
+    /* identical to box height, or 18px */
 
 
-    color: #000000;
+    color: #93949A;
+
     --box-shadow: none;
 
     --background: #F6F8FA;
     border-radius: 7px;
   }
 
+  .register-upload {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 126.39%;
+    /* identical to box height, or 18px */
+
+
+    color: #93949A;
+
+  }
+
+  .upload-icon {
+    height: 14px;
+    width: 12px;
+  }
+
   // ion-footer {
   //   position: fixed;
   //   bottom: 0px;
   // }
+  .footer-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 126.39%;
+    /* identical to box height, or 18px */
+
+    text-align: center;
+
+    color: #BEBEC1;
+  }
+
   .footer {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
     font-size: 13px;
-    bottom: 26px;
-    position: relative;
+    line-height: 126.39%;
+    /* identical to box height, or 18px */
+
+    text-align: center;
+
+    color: #BEBEC1;
+
   }
 }

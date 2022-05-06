@@ -8,10 +8,12 @@
         ion-col:nth-child(1) {
           justify-content: space-between;
           display: inline-flex;
+
           .quote-label {
             color: #10a8a0;
             font-size: 16px;
           }
+
           .quote-date {
             font-size: 10px;
             color: #31333d;
@@ -20,12 +22,15 @@
 
         ion-col:nth-child(2) {
           font-size: 14px;
+
           .user-name {
             font-size: 18px;
             color: #3e3d3d;
           }
+
           p {
             padding: 4px 0px;
+
             &.user-address,
             span {
               color: #93949a;
@@ -47,6 +52,11 @@
           margin: 0px !important;
         }
       }
+    }
+
+    .next-btn {
+      position: relative;
+      top: 18rem;
     }
   }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { debounceTime } from "rxjs/operators";
 
 @Component({
   selector: 'app-search',
@@ -6,10 +8,33 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search.page.scss'],
 })
 export class SearchPage implements OnInit {
+  showNotFound: boolean = false;
 
-  constructor() { }
+  searchMedicineFrm: FormGroup;
+  products = [
+    { name: 'Lisinopril' },
+    { name: 'Levothyroxine' },
+    { name: 'Gabapentin' },
+    { name: 'Amlodipine' },
+  ]
+
+  constructor(private fb: FormBuilder) {
+    this.searchMedicineFrm = this.fb.group({
+      productName: []
+    })
+  }
+
+
+
 
   ngOnInit() {
+    this.searchMedicineFrm.controls.productName.valueChanges.pipe(
+      debounceTime(1000)
+    ).subscribe((res) => {
+      if (res) {
+        this.showNotFound = this.products.some((e) => e.name.includes(res));
+      }
+    })
   }
 
 }

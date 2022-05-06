@@ -38,6 +38,22 @@ const routes: Routes = [
   {
     path: 'request-for-quotes',
     loadChildren: () => import('./authenticate/pages/request-for-quotes/request-for-quotes.module').then( m => m.RequestForQuotesPageModule)
+  },
+  {
+    path: 'request-to-admin',
+    loadChildren: () => import('./authenticate/pages/request-to-admin/request-to-admin.module').then( m => m.RequestToAdminPageModule)
+  },
+  {
+    path: 'quotes-profile',
+    loadChildren: () => import('./authenticate/pages/quotes-profile/quotes-profile.module').then( m => m.QuotesProfilePageModule)
+  },
+  {
+    path: 'spalsh-screen',
+    loadChildren: () => import('./auth/pages/spalsh-screen/spalsh-screen.module').then( m => m.SpalshScreenPageModule)
+  },
+  {
+    path: 'header',
+    loadChildren: () => import('./authenticate/pages/header/header.module').then( m => m.HeaderPageModule)
   }
 
 ];

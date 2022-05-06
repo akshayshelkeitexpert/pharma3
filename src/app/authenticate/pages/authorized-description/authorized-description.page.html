@@ -1,7 +1,7 @@
 <ion-header class="ion-padding-start ion-padding-top ion-padding-end">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
+      <ion-icon name="chevron-back-sharp" class="back-arrow" (click)="prevTab()"></ion-icon>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -47,7 +47,7 @@
 
 <ion-footer class="ion-padding-bottom">
   <ion-toolbar class="ion-padding-bottom">
-    <ion-button expand="block" type="submit" routerLink="/auth/assosiates" class="custom-btn">SUBMIT
+    <ion-button expand="block" type="submit" routerLink='/admin/documentview' class="custom-btn">SUBMIT
     </ion-button>
   </ion-toolbar>
 </ion-footer>

@@ -1,0 +1,54 @@
+::ng-deep {
+  .request-poppover-modal .popover-content {
+    // transform: translateY(-120%) !important;
+  }
+
+  app-selection-profile-model {
+    .customlist {
+      background-color: #10A8A0;
+      opacity: 0.5;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 23px;
+      width: 42px;
+      height: 42px;
+    }
+
+    .heading {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height, or 125% */
+
+
+      color: #3E3D3D;
+
+      margin: 0px 10px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+
+    }
+
+    p {
+      &.actions {
+        position: relative;
+        left: 1pc;
+      }
+    }
+
+    span {
+      border: 0.5px solid #0000007d;
+      box-sizing: border-box;
+      border-radius: 60px;
+      padding: 3px 13px;
+      color: #10A8A0;
+      font-size: 10px;
+    }
+  }
+}

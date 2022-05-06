@@ -71,6 +71,10 @@ const routes: Routes = [
         loadChildren: () => import('../quotes/quotes.module').then(m => m.QuotesPageModule)
       },
       {
+        path: 'quotesprofile',
+        loadChildren: () => import('../quotes-profile/quotes-profile.module').then(m => m.QuotesProfilePageModule)
+      },
+      {
         path: 'quotenotification',
         loadChildren: () => import('../quote-notification/quote-notification.module').then(m => m.QuoteNotificationPageModule)
       },
@@ -101,6 +105,10 @@ const routes: Routes = [
       {
         path: 'requestforquotes',
         loadChildren: () => import('../request-for-quotes/request-for-quotes.module').then(m => m.RequestForQuotesPageModule)
+      },
+      {
+        path: 'requestadmin',
+        loadChildren: () => import('../request-to-admin/request-to-admin.module').then(m => m.RequestToAdminPageModule)
       },
 
 

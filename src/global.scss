@@ -83,4 +83,55 @@ ion-footer {
   &.right-icon-available {
     padding-right: 40px !important;
   }
+
+
+  .humbergger-menu {
+    color: #10a8a0;
+    position: relative;
+    top: 17px;
+  }
+
+  .right-icons {
+    .notification-icon {
+      width: 16px;
+      height: 19.5px;
+    }
+
+    .add-user-icon {
+      width: 24px;
+      height: 16px;
+    }
+  }
+
+}
+
+ion-header {
+  ion-toolbar {
+
+
+    ion-buttons {
+      &.humbergger-menu {
+        color: #10a8a0;
+        position: relative;
+        top: 17px;
+      }
+
+      &.right-icons {
+        .notification-icon {
+          width: 16px;
+          height: 19.5px;
+        }
+
+        .add-user-icon {
+          width: 24px;
+          height: 16px;
+        }
+      }
+    }
+  }
+
+  .header-icon {
+    position: relative;
+    top: 17px;
+  }
 }

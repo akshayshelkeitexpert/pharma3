@@ -1,7 +1,7 @@
 <ion-header class="ion-padding-start ion-padding-top ion-padding-end">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
+      <ion-icon name="chevron-back-sharp" class="back-arrow" (click)="prevTab()"></ion-icon>
     </ion-buttons>
     <ion-title>Associates</ion-title>
   </ion-toolbar>
@@ -25,12 +25,20 @@
       </ion-label>
     </ion-item>
   </ion-list>
-  <ion-row class="next-btn ion-padding-top ion-margin ">
+  <!-- <ion-row class="next-btn ion-padding-top ion-margin ">
     <ion-col size="12">
-      <ion-button expand="block" type="submit" routerLink="/auth/assosiates" class="custom-btn">Add Associates
+      <ion-button expand="block" type="submit" routerLink="/admin/associatesDetails" class="custom-btn">Add Associates
       </ion-button>
     </ion-col>
-  </ion-row>
+  </ion-row> -->
 
 
 </ion-content>
+<footer>
+  <ion-row class="ion-padding-bottom ion-margin ">
+    <ion-col size="12">
+      <ion-button expand="block" type="submit" routerLink="/admin/associatesDetails" class="custom-btn">Add Associates
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</footer>

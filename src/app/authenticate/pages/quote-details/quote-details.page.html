@@ -1,7 +1,7 @@
 <ion-header class="ion-padding-start ion-padding-top ion-padding-end">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
+      <ion-icon name="chevron-back-sharp" class="back-arrow" routerLink="/admin/quoterequest"></ion-icon>
     </ion-buttons>
     <ion-title>Quote Details</ion-title>
   </ion-toolbar>
@@ -23,6 +23,12 @@
       <p class="manifacture-name"><span>Manufacturer Name:</span>&nbsp; <strong>Lorem Ipsum name</strong></p>
       <p class="quantity"><span>Quantity:</span>&nbsp; <strong>5 Carton</strong></p>
       <p class="unit"><span>Unit: </span>&nbsp; <strong>Strip</strong></p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="next-btn ion-padding-top ion-margin ">
+    <ion-col size="12">
+      <ion-button expand="block" type="submit" routerLink="/admin/replyquotation" class="custom-btn"> SEND REPLY
+      </ion-button>
     </ion-col>
   </ion-row>
 </ion-content>

@@ -41,6 +41,10 @@ const routes: Routes = [
         path: 'register',
         loadChildren: () => import('../register/register.module').then(m => m.RegisterPageModule)
       },
+      {
+        path: 'spalshcreen',
+        loadChildren: () => import('../spalsh-screen/spalsh-screen.module').then(m => m.SpalshScreenPageModule)
+      },
 
     ]
   },

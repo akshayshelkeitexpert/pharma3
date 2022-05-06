@@ -1,5 +1,58 @@
 ::ng-deep {
   app-search {
+    .not-found-msg {
+      position: relative;
+      top: 6rem;
+    }
+
+    .deleteicon {
+      position: absolute;
+      right: 12px;
+      height: 10px;
+      width: 10px;
+    }
+
+    .not-found {
+      background: rgba(255, 255, 255, 0.79);
+      box-shadow: 0px 38px 39px rgb(0 0 0 / 3%);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      height: 306px;
+      position: absolute;
+      width: 92%;
+      top: 222px;
+      z-index: 9;
+      background: transparent;
+
+    }
+
+    .error-msg {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 126.39%;
+      /* or 18px */
+
+      text-align: center;
+
+      color: #93949A;
+    }
+
+    .error-msg1 {
+      text-decoration: underline;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 126.39%;
+      /* or 18px */
+
+      text-align: center;
+
+
+    }
+
     .header {
       top: 38px;
       position: relative;
@@ -15,13 +68,32 @@
       bottom: 12px;
       position: relative;
 
-      .tag {
+      .searching-text {
+        font-family: 'Roboto';
+        font-style: normal;
         font-weight: 400;
-        font-size: 27px;
+        font-size: 23px;
+        line-height: 126.39%;
+        /* or 35px */
+
+
+        color: #31333D;
       }
 
-      .tag2 {
+      .searching-text1 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
         font-size: 16px;
+        line-height: 126.39%;
+        /* or 20px */
+
+        text-align: center;
+
+        color: #31333D;
+        position: relative;
+        top: -12px;
+
       }
     }
 
@@ -35,9 +107,17 @@
 
     ion-row {
       .custom-textbox {
+
         opacity: 0.5;
-        border: 1px solid #000000;
-        box-sizing: border-box;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 126.39%;
+        /* identical to box height, or 18px */
+
+
+        color: #93949A;
         border-radius: 60px;
         color: #93949A;
         padding: 7px 9px !important;
@@ -47,7 +127,7 @@
 
       &.next-btn {
         position: relative;
-        top: 13rem;
+        top: 7rem;
       }
 
       &.forgot-btn {

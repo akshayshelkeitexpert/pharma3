@@ -1,14 +1,28 @@
-<ion-header class="ion-padding-start ion-padding-top ion-padding-end">
+<!-- <ion-header class="ion-padding-start ion-padding-top ion-padding-end">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
     </ion-buttons>
     <ion-title>Notification</ion-title>
   </ion-toolbar>
+</ion-header> -->
+<ion-header>
+  <ion-toolbar clas="ion-padding-top ">
+    <ion-buttons class="humbergger-menu" slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="padding-top:35px">Notification</ion-title>
+    <ion-buttons class="right-icons ion-margin-end header-icon" slot="end">
+
+      <ion-icon class="notification-icon" slot="end" [src]="'assets/icon/notification-icon.svg'"></ion-icon>
+
+    </ion-buttons>
+
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-row class="ion-padding-start ion-padding-end">
+  <ion-row class="ion-padding-start ion-padding-end ion-padding-top">
     <ion-col size="12" class="col" *ngFor="let item of notifications">
       <div class="main-card" [ngClass]="item.isGreen ? 'green-shade' : 'white-shade'">
         <p class="card-heading"><strong>{{item.title}}</strong></p>

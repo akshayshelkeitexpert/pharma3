@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { ModalController, NavController } from '@ionic/angular';
 
 import { AccountUpdatingModelPage } from './account-updating-model/account-updating-model.page';
 
@@ -10,7 +10,7 @@ import { AccountUpdatingModelPage } from './account-updating-model/account-updat
 })
 export class AccountSettingPage implements OnInit {
 
-  constructor(private modalCtrl: ModalController,) { }
+  constructor(private modalCtrl: ModalController, private navCtrl: NavController,) { }
 
   ngOnInit() {
   }
@@ -28,6 +28,9 @@ export class AccountSettingPage implements OnInit {
 
     await presentModel.present();
 
+  }
+  prevTab() {
+    this.navCtrl.navigateRoot('/admin');
   }
 
 }

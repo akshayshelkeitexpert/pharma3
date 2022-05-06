@@ -1,13 +1,27 @@
-<ion-header class="ion-padding-start ion-padding-top ion-padding-end">
+<!-- <ion-header class="ion-padding-start ion-padding-top ion-padding-end">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
     </ion-buttons>
     <ion-title>Offers</ion-title>
   </ion-toolbar>
+</ion-header> -->
+<ion-header>
+  <ion-toolbar clas="ion-padding-top ">
+    <ion-buttons class="humbergger-menu" slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="padding-top:35px">Offers</ion-title>
+    <ion-buttons class="right-icons ion-margin-end header-icon" slot="end">
+
+      <ion-icon class="notification-icon" slot="end" [src]="'assets/icon/notification-icon.svg'"></ion-icon>
+
+    </ion-buttons>
+
+  </ion-toolbar>
 </ion-header>
 <ion-content>
-  <div>
+  <div class="ion-padding-top">
     <ion-row>
       <ion-segment value="RecentNote" class="custsegment">
         <ion-segment-button value="RecentNote" class="customrecentnote">
@@ -34,7 +48,7 @@
             <span>12</span>
           </p>
         </ion-col>
-        <div routerLink="/auth/assosiates" class="offer-btn">View Offer
+        <div routerLink="/admin/offerdetails" class="offer-btn">View Offer
         </div>
       </ion-row>
     </ng-container>

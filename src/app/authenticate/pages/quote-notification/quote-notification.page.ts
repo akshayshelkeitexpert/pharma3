@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-quote-notification',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuoteNotificationPage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController,) { }
 
   ngOnInit() {
+  }
+  prevTab() {
+    this.navCtrl.navigateRoot('/admin/quoterequest');
   }
 
 }

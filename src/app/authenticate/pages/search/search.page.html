@@ -1,63 +1,76 @@
 <ion-content>
-  <form>
+  <form [formGroup]="searchMedicineFrm">
     <div class="login-screen">
       <div class="header">
         <ng-container>
-          <ion-icon name="chevron-back-sharp" class="back-arrow"></ion-icon>
+          <ion-icon name="chevron-back-sharp" class="back-arrow" routerLink="/admin/requestforquotes"></ion-icon>
         </ng-container>
       </div>
       <ion-row class="ion-margin ion-padding logo">
         <ion-col size="12" class="text-center">
           <ion-text class="recover">
-            <p class="tag1">What are you searching for?</p>
-            <p class="tag2">for a personalized user experience</p>
+            <p class="searching-text ion-no-margin">What are you searching for?</p>
+            <p class="searching-text1 ">for a personalized user experience</p>
           </ion-text>
         </ion-col>
       </ion-row>
 
-      <ion-row class="ion-margin ion-padding-start">
+      <ion-row class="ion-margin">
         <ion-col size="12">
-          <ion-input autocomplete="off" type="text" expand="block" class="form-control custom-textbox"
-            placeholder="Enter product name you want to buy">
-            <ion-icon [src]="'assets/icon/location-ico.svg'"></ion-icon>
+          <ion-input formControlName="productName" autocomplete="off" type="text" expand="block"
+            class="form-control custom-textbox" placeholder="Enter product name you want to buy">
+            <ion-icon [src]="'assets/icon/search-ico.svg'" style="margin-left: 12px;"></ion-icon>
           </ion-input>
         </ion-col>
 
         <ion-col size="12">
           <ion-input autocomplete="off" type="text" expand="block" class="form-control custom-textbox"
             placeholder="Manufacturer Name">
-            <ion-icon [src]="'assets/icon/location-ico.svg'"></ion-icon>
+            <ion-icon [src]="'assets/icon/man-ico.svg'" style="margin-left: 12px"></ion-icon>
           </ion-input>
         </ion-col>
         <ion-col size="12">
           <ion-input autocomplete="off" type="text" expand="block" class="form-control custom-textbox"
             placeholder="Avg. Order Value ">
-            <ion-icon [src]="'assets/icon/location-ico.svg'"></ion-icon>
+            <ion-icon [src]="'assets/icon/rup-ico.svg'" style="margin-left: 12px;"></ion-icon>
           </ion-input>
         </ion-col>
         <ion-col size="12">
           <ion-input autocomplete="off" type="text" expand="block" class="form-control custom-textbox"
             placeholder="Unit">
-            <ion-icon [src]="'assets/icon/location-ico.svg'"></ion-icon>
+            <ion-icon [src]="'assets/icon/unit-ico.svg'" style="margin-left: 12px;"></ion-icon>
           </ion-input>
         </ion-col>
         <ion-col size="12">
           <ion-input autocomplete="off" type="text" expand="block" class="form-control custom-textbox"
             placeholder="Quantity">
-            <ion-icon [src]="'assets/icon/location-ico.svg'"></ion-icon>
+            <ion-icon [src]="'assets/icon/quen-ico.svg'" style="margin-left: 12px;"></ion-icon>
           </ion-input>
         </ion-col>
       </ion-row>
 
 
-      <br>
-      <ion-row class="next-btn ion-padding-top ion-margin ">
-        <ion-col size="12">
-          <ion-button expand="block" type="submit" routerLink="/auth/assosiates" class="custom-btn">Next
-          </ion-button>
+    </div>
+
+    <ng-container *ngIf="showNotFound">
+      <ion-row class="ion-margin text-center not-found ion-no-padding">
+        <ion-icon [src]="'assets/icon/deletenotfound-ico.svg'" (click)="showNotFound = !showNotFound"
+          class="deleteicon"></ion-icon>
+        <ion-col class="not-found-msg">
+          <img src="assets/icon/not-found-ico.svg">
+          <p class="error-msg ion-no-margin">Record not found in the system</p>
+          <a class="error-msg1"> request admin to add the product</a>
         </ion-col>
       </ion-row>
-      <br>
-    </div>
+    </ng-container>
   </form>
+
 </ion-content>
+<ion-footer class="ion-padding-bottom ion-margin-end">
+  <ion-row class="ion-margin">
+    <ion-col size="12">
+      <ion-button expand="block" type="submit" routerLink="/admin/requestadmin" class="custom-btn">Next
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

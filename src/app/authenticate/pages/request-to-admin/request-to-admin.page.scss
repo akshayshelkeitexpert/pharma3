@@ -1,0 +1,50 @@
+.button-footer {
+  background: #FFFFFF;
+  box-shadow: 0px 3px 34px rgba(190, 190, 190, 0.49);
+  border-radius: 60px;
+
+  height: 49px;
+
+}
+
+.admin-ico {
+  margin-left: 11px;
+  position: absolute;
+  right: 20px;
+}
+
+.chat-logo {
+  background: #C4C4C4;
+  height: 32px;
+  width: 32px;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+}
+
+.chat-list {
+  padding: 5px 7px 11px 8px;
+  /* margin: 24px; */
+  height: 72px;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 37px;
+  top: -54px;
+  color: #93949A;
+  position: relative;
+  font-size: 9px;
+  background: #F6F8FA;
+  border-radius: 9px 9px 9px 0px;
+  line-height: 12px;
+}
+
+.search-detail {
+  // position: relative;
+  top: 3rem;
+}
+
+.search-btn {
+  position: relative;
+  top: 3rem;
+}

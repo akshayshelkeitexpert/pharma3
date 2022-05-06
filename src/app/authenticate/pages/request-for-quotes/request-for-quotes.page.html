@@ -1,4 +1,13 @@
-<ion-header class="ion-padding-start ion-padding-top ion-padding-end">
+<ion-header>
+  <ion-toolbar clas="ion-padding-top ">
+    <ion-buttons class="humbergger-menu" slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons class="right-icons ion-margin-end header-icon" slot="end">
+      <ion-icon class="notification-icon" slot="end" [src]="'assets/icon/notification-icon.svg'"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
@@ -6,75 +15,94 @@
     <ion-col size="12">
       <p class="heading ion-no-margin">Request For Quotes</p>
       <p class="sub-heading text-center">When user wants to buy any products he she can request for quotes from sellers
-        by select
-        the options:</p>
+        by select the options:</p>
     </ion-col>
   </ion-row>
+
+
+
+  <!-- <ion-item>
+    <ion-label>Select: Popover Interface</ion-label>
+    <ion-select interface="popover" class="custom-options">
+      <ion-select-option value="brown">Brown</ion-select-option>
+      <ion-select-option value="blonde">Blonde Blonde Blonde Blonde</ion-select-option>
+      <ion-select-option value="black">Black</ion-select-option>
+      <ion-select-option value="red">Red</ion-select-option>
+    </ion-select>
+  </ion-item> -->
+
+
+
   <ion-row class="ion-margin ion-padding-start ion-padding-end">
     <ion-col size="12" class="check-button ion-padding">
       <ion-label class="check-item">
-        <ion-checkbox></ion-checkbox>&nbsp;&nbsp;&nbsp; West Bengal
+        <ion-checkbox (click)="pageState.isStateSelected = !pageState.isStateSelected"></ion-checkbox>
+        &nbsp;&nbsp;&nbsp; West Bengal
       </ion-label>
       <ion-icon [src]="'assets/icon/down-ico.svg'" class="attachment-icon"></ion-icon>
     </ion-col>
     <br>
-    <br><br>
-    <ion-col size="12" class="check-button ion-padding-top ion-padding">
-      <ion-label class="check-item">
-        <ion-checkbox></ion-checkbox>&nbsp;&nbsp;&nbsp;&nbsp;Kolkata
-      </ion-label>
-      <ion-icon [src]="'assets/icon/down-ico.svg'" class="attachment-icon"></ion-icon>
-    </ion-col>
-
-  </ion-row>
-
-  <ion-row class="ion-margin ion-padding-start ion-padding-end">
-    <ion-col size="12" class="check-box ion-padding">
-
-      <ion-col size="12" class="title check-button">
+    <ng-container *ngIf="pageState.isStateSelected"><br><br>
+      <ion-col size="12" class="check-button ion-padding-top ion-padding">
         <ion-label class="check-item">
-          Associate
+          <ion-checkbox (click)="pageState.isCitySelected = !pageState.isCitySelected"></ion-checkbox>
+          &nbsp;&nbsp;&nbsp;&nbsp;Kolkata
         </ion-label>
-        <ion-icon [src]="'assets/icon/down-ico.svg'" class="attachment-icon1"></ion-icon>
+        <ion-icon [src]="'assets/icon/down-ico.svg'" class="attachment-icon"></ion-icon>
       </ion-col>
-      <p>
-        <ion-label>
-          <ion-checkbox></ion-checkbox>&nbsp;&nbsp;&nbsp;&nbsp;All
-
-        </ion-label>
-      </p>
-      <p>
-        <ion-label class="">
-          <ion-checkbox></ion-checkbox>&nbsp;&nbsp;&nbsp;&nbsp; Bijoy Kumar
-        </ion-label>
-      </p>
-      <p>
-        <ion-label>
-          <ion-checkbox></ion-checkbox>&nbsp;&nbsp;&nbsp;&nbsp;Saha
-          Tapan Saha
-        </ion-label>
-      </p>
-    </ion-col>
+    </ng-container>
   </ion-row>
-  <ion-list lines="none" class="ion-margin">
-    <ion-list-header>
-      <ion-label class="redio-offer">Authorized</ion-label>
-    </ion-list-header>
-    <ion-radio-group allow-empty-selection="true" name="radio-group" #radioGroup>
-      <ion-item>
-        <ion-label>All Vendor</ion-label>
-        <ion-radio slot="start" class="radio-btn" name="offerto"></ion-radio>
-      </ion-item>
-      <ion-item>
-        <ion-label>All Vendor
-          Authorized Vendor</ion-label>
-        <ion-radio slot="start" class="radio-btn" name="offerto"></ion-radio>
-      </ion-item>
-    </ion-radio-group>
-  </ion-list>
+
+  <ng-container *ngIf="pageState.isCitySelected">
+    <ion-row class="ion-margin ion-padding-start ion-padding-end">
+      <ion-col size="12" class="check-box ion-padding">
+
+        <ion-col size="12" class="title check-button">
+          <ion-label class="check-item">
+            Associate
+          </ion-label>
+          <ion-icon [src]="'assets/icon/down-ico.svg'" class="attachment-icon1"></ion-icon>
+        </ion-col>
+        <p>
+          <ion-label>
+            <ion-checkbox></ion-checkbox>&nbsp;&nbsp;&nbsp;&nbsp;All
+
+          </ion-label>
+        </p>
+        <p>
+          <ion-label class="">
+            <ion-checkbox></ion-checkbox>&nbsp;&nbsp;&nbsp;&nbsp; Bijoy Kumar
+          </ion-label>
+        </p>
+        <p>
+          <ion-label>
+            <ion-checkbox></ion-checkbox>&nbsp;&nbsp;&nbsp;&nbsp;Saha
+            Tapan Saha
+          </ion-label>
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-list lines="none" class="ion-margin">
+      <ion-list-header>
+        <ion-label class="redio-offer">Authorized</ion-label>
+      </ion-list-header>
+      <ion-radio-group allow-empty-selection="true" name="radio-group" #radioGroup>
+        <ion-item>
+          <ion-label>All Vendor</ion-label>
+          <ion-radio slot="start" class="radio-btn" name="offerto"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            Authorized Vendor</ion-label>
+          <ion-radio slot="start" class="radio-btn" name="offerto"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ng-container>
+
   <ion-row class="next-btn ion-padding-top ion-margin ">
     <ion-col size="12">
-      <ion-button expand="block" type="submit" routerLink="/auth/otp" class="custom-btn"> GET STARTED
+      <ion-button expand="block" type="submit" routerLink="/admin/search" class="custom-btn"> GET STARTED
       </ion-button>
     </ion-col>
   </ion-row>

@@ -7,7 +7,11 @@ const routes: Routes = [
   {
     path: '',
     component: SelctionPage
+  },  {
+    path: 'selection-profile-model',
+    loadChildren: () => import('./selection-profile-model/selection-profile-model.module').then( m => m.SelectionProfileModelPageModule)
   }
+
 ];
 
 @NgModule({
